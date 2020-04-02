@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp20"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Leave Barrier"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_popup_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp5"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_leavetype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp10"
+            android:textSize="@dimen/sp18"
+            android:text="Leave Type"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp2"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_leaveCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:hint="New Leave Code"
+                    android:textAllCaps="true"
+                    android:maxLength="3"
+                    android:inputType="text"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp2"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_leaveNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:hint="No. Of Leave"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp2"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_noticePeriod"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:hint="Notice Period"
+                    android:maxLength="2"
+                    android:inputType="number"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp2"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/et_applyTimes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:hint="Apply Times"
+                    android:inputType="number"
+                    android:maxLength="2"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Leave Status"/>
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp30"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:padding="@dimen/dp5"
+                android:text="status"
+                android:background="@drawable/btn_round_shape_green"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:background="@color/barrier_green_colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

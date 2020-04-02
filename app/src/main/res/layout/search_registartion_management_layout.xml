@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    style="@style/Ll_both_match_heading"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLogin"
+        style="@style/Ll_normal_vtl"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            style="@style/Rl_normal"
+            android:layout_margin="@dimen/dp5"
+            android:layout_marginTop="@dimen/dim_eighty">
+
+
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                android:id="@+id/profile_picx"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp70"
+                style="@style/imgvw_normal"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dp16"
+                android:elevation="@dimen/dp1"
+                app:civ_border_color="#fffdfd"
+                app:civ_border_width="@dimen/dp5" />
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_height="wrap_content"
+                style="@style/constraint_layout"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/pro_cardView"
+                    style="@style/cardViewStyle"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dim_fifty"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop="@dimen/dim_fifteen"
+                    app:cardCornerRadius="@dimen/dim_fifteen"
+                    app:contentPaddingBottom="@dimen/dim_fifteen"
+                    card_view:cardElevation="@dimen/dim_four"
+                    card_view:cardUseCompatPadding="false">
+
+
+                    <Button
+                        android:id="@+id/login_for_management_fab"
+                        style="@style/button_normal"
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_gravity="end"
+                        android:background="@drawable/button_shape_send"
+                        android:text="@string/next"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+
+                    <LinearLayout
+                        style="@style/Ll_normal_vtl"
+                        android:layout_margin="@dimen/dp5">
+
+                        <TextView
+                            android:id="@+id/login_tv"
+                            style="@style/tv_normal"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dim_twenty"
+                            android:text="@string/hello_there"
+                            android:textColor="#6b6969"
+                            android:textSize="@dimen/dp19" />
+
+
+                        <android.support.v7.widget.CardView
+                            android:layout_height="@dimen/dp35"
+                            style="@style/cardViewStyle"
+                            android:layout_margin="@dimen/dp5"
+                            app:cardCornerRadius="@dimen/dp18"
+                            app:cardElevation="@dimen/dp1">
+
+                            <LinearLayout
+                                android:layout_height="@dimen/dp35"
+                                style="@style/Ll_normal_htl"
+                                android:background="@drawable/chip_back"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    style="@style/Image_View"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="5dp"
+                                    android:src="@drawable/scool_logo" />
+
+                                <View
+                                    android:layout_width="@dimen/dp1"
+                                    android:layout_height="@dimen/dp25"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:layout_marginStart="@dimen/dp5"
+                                    android:background="#eab354" />
+
+                                <LinearLayout
+                                    style="@style/Ll_normal_htl">
+
+                                    <EditText
+                                        android:id="@+id/et_schoolId"
+                                        android:layout_width="@dimen/dp0"
+                                        android:layout_height="@dimen/dp35"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:digits="@string/staffId"
+                                        android:drawablePadding="@dimen/dp10"
+                                        android:hint="@string/school_id"
+                                        android:inputType="textCapCharacters"
+                                        android:padding="@dimen/dp5"
+                                        android:textColor="#666565"
+                                        android:textSize="@dimen/sp16"/>
+
+                                    <ProgressBar
+                                        android:id="@+id/schoolIdFetcHProgressBar"
+                                        android:layout_width="@dimen/dp0"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.25"
+                                        android:visibility="gone" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <LinearLayout
+                            style="@style/Ll_normal_htl">
+
+
+                            <TextView
+                                android:id="@+id/textViewIfNotYourSchool"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/dp8"
+                                android:layout_marginTop="@dimen/dp8"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="@string/it_s_not_my_school"
+                                android:textColor="#3794c2"
+                                android:textSize="@dimen/sp16"
+                                android:visibility="gone"/>
+
+                            <ProgressBar
+                                android:id="@+id/clearSchoolIDProgressBar"
+                                android:layout_width="@dimen/dp20"
+                                android:layout_height="@dimen/dp20"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/dp5"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/managementCardView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_margin="@dimen/dp5"
+                            android:visibility="gone"
+                            app:cardCornerRadius="@dimen/dp18"
+                            app:cardElevation="@dimen/dp1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp35"
+                                android:background="@drawable/chip_back"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:src="@drawable/ic_user_a" />
+
+                                <View
+                                    android:layout_width="1dp"
+                                    android:layout_height="25dp"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:layout_marginStart="5dp"
+                                    android:background="#eab354" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:visibility="visible">
+
+
+                                    <EditText
+                                        android:id="@+id/et_managementId"
+                                        android:layout_width="0dp"
+                                        android:layout_height="35dp"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="1"
+                                        android:background="@null"
+                                        android:digits="@string/staffId"
+                                        android:drawablePadding="5dp"
+                                        android:hint="Management ID"
+                                        android:inputType="textCapCharacters"
+                                        android:padding="5dp"
+                                        android:textColor="#666565"
+                                        android:textSize="16sp"
+                                        android:visibility="gone" />
+
+
+                                    <ProgressBar
+                                        android:id="@+id/managementIdFetcHProgressBar"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="0.15"
+                                        android:visibility="gone" />
+
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </android.support.v7.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textViewManagementMobileNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:text="**********"
+                                android:textColor="#a9a9a9"
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+
+
+                            <TextView
+                                android:id="@+id/textViewIfNotYourManagementID"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1"
+                                android:gravity="end"
+                                android:text="It's not me!"
+                                android:textColor="#3794c2"
+                                android:textSize="16sp"
+                                android:visibility="gone" />
+
+                            <ProgressBar
+                                android:id="@+id/clearManagementIdProgressBar"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

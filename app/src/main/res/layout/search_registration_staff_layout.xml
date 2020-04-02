@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dim_eighty"
+            android:layout_margin="5dp"
+            >
+
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:src="#f7f5f5"
+                android:elevation="1dp"
+                android:padding="2dp"/>
+
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                android:id="@+id/profile_picx"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:elevation="1dp"
+                android:padding="15dp"
+                android:layout_marginTop="6dp"/>
+
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/pro_cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dim_fifty"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:paddingTop="@dimen/dim_fifteen"
+                    app:cardCornerRadius="@dimen/dim_fifteen"
+                    app:contentPaddingBottom="@dimen/dim_fifteen"
+                    card_view:cardBackgroundColor="#fff"
+                    card_view:cardElevation="@dimen/dim_four"
+                    card_view:cardUseCompatPadding="false"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp">
+
+                        <TextView
+                            android:id="@+id/login_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/dim_twenty"
+                            android:text="Hello there!"
+                            android:textColor="#6b6969"
+                            android:textSize="19sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Search staff to continue"
+                            android:textColor="#a6a4a4"
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="horizontal">
+
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/searchEdittext"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_gravity="center">
+
+                                <EditText
+                                    android:id="@+id/et_staffId"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Staff Id"
+                                    android:inputType="textCapCharacters"
+                                    android:digits="Staff ID"/>
+
+
+                            </android.support.design.widget.TextInputLayout>
+
+
+                            <ProgressBar
+                                android:id="@+id/staffIdFetcHProgressBar"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.15"
+                                android:visibility="gone"/>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewStaffMobileNumber"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="**********"
+                                android:layout_gravity="center"
+                                android:textColor="#a9a9a9"
+                                android:textSize="16sp"
+                                android:visibility="gone"/>
+
+
+                            <TextView
+                                android:id="@+id/textViewIfNotCorrectUser"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:text="@string/hey_it_s_me"
+                                android:textColor="#a9a9a9"
+                                android:textSize="16sp"
+                                android:visibility="gone"
+                                android:gravity="center"/>
+
+                            <ProgressBar
+                                android:id="@+id/clearProgressBar"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="5dp"
+                                android:visibility="gone"/>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/login_fab"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/arrow_next"
+                    android:visibility="gone"
+                    app:layout_anchor="@+id/pro_cardView"
+                    app:layout_anchorGravity="end"
+                    android:layout_marginTop="100dp"/>
+            </android.support.design.widget.CoordinatorLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:gravity="center"
+    tools:context="in.varadhismartek.patashalaerp.LoginAndRegistation.LoginScreenActivity">
+
+    <TextView
+        style="@style/tv_normal"
+        android:id="@+id/name"
+        android:text="@string/welcome_user"/>
+
+</LinearLayout>

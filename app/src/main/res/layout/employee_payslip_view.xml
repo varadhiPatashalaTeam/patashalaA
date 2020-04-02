@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/cust_tool"
+        layout="@layout/custom_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp0"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp0"
+                android:elevation="@dimen/dp5"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/orange_colorPrimaryDark"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+
+                            android:id="@+id/civ_EmployeeImage"
+                            android:layout_width="@dimen/dp90"
+                            android:layout_height="@dimen/dp90"
+                            android:elevation="@dimen/dp8"
+                            android:src="@drawable/circle_shape_border" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".75"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+                            android:minHeight="@dimen/dp25"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".35"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="Name"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+
+                            <TextView
+                                android:id="@+id/tv_EmployeeName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".65"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+                            android:minHeight="@dimen/dp25"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".35"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="Employee ID"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+
+                            <TextView
+                                android:id="@+id/tv_EmployeeID"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".65"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+                            android:minHeight="@dimen/dp25"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".35"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="Department "
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+
+                            <TextView
+                                android:id="@+id/tv_Department"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".65"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+                            android:minHeight="@dimen/dp25"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".35"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="Designation"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+
+                            <TextView
+                                android:id="@+id/tv_Designation"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".65"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/sp14" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F1F3F4"
+                android:gravity="center"
+                android:minHeight="@dimen/dp40"
+                android:text="Payslip Information"
+                android:textColor="@color/grey"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp5"
+                android:background="@color/white"
+                android:elevation="@dimen/dp1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/spn_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinnerbackground" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Spinner
+                            android:id="@+id/spn_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/spinnerbackground" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:paddingLeft="@dimen/dp10"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:minHeight="@dimen/dp30"
+                    android:text="Employee Payslip "
+                    android:gravity="center|left"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dp40">
+                    <TextView
+                        android:id="@+id/tvPdfFile"
+                        android:layout_width="0dp"
+                        android:layout_weight=".9"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:paddingLeft="@dimen/dp10"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="pdf file "
+                        android:gravity="center|left"/>
+                    <LinearLayout
+                        android:id="@+id/ll_pdfView"
+                        android:layout_width="0dp"
+                        android:layout_weight=".1"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="@dimen/dp35"
+                            android:layout_height="@dimen/dp35"
+                            android:src="@drawable/ic_view"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp20"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="Update Notification"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:background="@drawable/ic_popup"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/Ll_normal_vtl"
+            android:background="@color/backgroundColor"
+            android:padding="@dimen/dp5">
+
+            <TextView
+                style="@style/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:text="Title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/edittext_normal"
+                android:layout_height="@dimen/dp65"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp3"
+                android:background="@drawable/shape4"
+                android:padding="@dimen/dp5"
+                android:gravity="start"
+                android:textSize="@dimen/sp14"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <TextView
+                style="@style/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:text="Message"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_message"
+                style="@style/edittext_normal"
+                android:layout_height="@dimen/dp100"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp3"
+                android:background="@drawable/shape4"
+                android:gravity="start"
+                android:padding="@dimen/dp5"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textSize="@dimen/sp14"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <TextView
+                style="@style/tv_normal"
+                android:id="@+id/tv_comment"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:text="Comment"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp3"
+                android:background="@drawable/shape4"
+                android:gravity="start"
+                android:padding="@dimen/dp5"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textSize="@dimen/sp14"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Schedule Notification"
+                        android:padding="@dimen/dp5"
+                        android:background="@color/colorPrimaryDark"
+                        android:textColor="@color/white"/>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp14"
+                            android:layout_margin="@dimen/dp5"
+                            android:layout_alignParentLeft="true"
+                            android:text="Schedule Notification"
+                            android:layout_alignParentStart="true" />
+
+                        <Button
+                            android:id="@+id/bt_on_off"
+                            android:layout_width="@dimen/dp50"
+                            android:layout_height="@dimen/dp20"
+                            android:background="@color/light_grey"
+                            android:text="OFF"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/dp5"
+                            android:textSize="@dimen/sp12"
+                            android:textColor="@color/white"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_schedule_row"
+                        android:visibility="gone"
+                        style="@style/Ll_normal_htl">
+
+                        <LinearLayout
+                            style="@style/Ll_weight_htl"
+                            android:id="@+id/ll_date"
+                            android:layout_margin="@dimen/dp5">
+
+                            <RelativeLayout
+                                android:id="@+id/leave_layout_start_date"
+                                style="@style/Rl_normal"
+                                android:background="@drawable/shape4">
+
+                                <TextView
+                                    android:id="@+id/tv_date"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp35"
+                                    android:layout_marginEnd="@dimen/dp30"
+                                    android:layout_marginRight="@dimen/dp30"
+                                    android:gravity="center"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/date" />
+
+                                <ImageView
+                                    style="@style/imgvw_normal"
+                                    android:layout_height="34dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="@dimen/dp1"
+                                    android:background="@drawable/backgroung"
+                                    android:padding="@dimen/dp5"
+                                    android:src="@drawable/ic_date_range_black_24dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:contentDescription="@string/image"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Ll_weight_htl"
+                            android:id="@+id/ll_time"
+                            android:layout_margin="@dimen/dp5">
+
+                            <RelativeLayout
+                                android:id="@+id/leave_layout_to_date"
+                                style="@style/Rl_normal"
+                                android:background="@drawable/shape4">
+
+                                <TextView
+                                    android:id="@+id/tv_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp35"
+                                    android:layout_marginEnd="@dimen/dp30"
+                                    android:layout_marginRight="@dimen/dp30"
+                                    android:gravity="center"
+                                    android:padding="@dimen/dp5"
+                                    android:text="Time" />
+
+                                <ImageView
+                                    style="@style/imgvw_normal"
+                                    android:layout_height="34dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="@dimen/dp1"
+                                    android:background="@drawable/backgroung"
+                                    android:padding="@dimen/dp5"
+                                    android:src="@drawable/ic_access_time_black_24dp"
+                                    tools:ignore="RtlHardcoded"
+                                    android:contentDescription="@string/image"/>
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/bt_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp35"
+                android:text="Upload Attachment"
+                android:layout_margin="@dimen/dp10"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_round_shape_green"
+                android:padding="@dimen/dp10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp12"
+                android:textAllCaps="false"/>
+
+            <LinearLayout
+                style="@style/Ll_normal_vtl"
+                android:layout_margin="@dimen/dp3">
+
+                <ImageView
+                    android:id="@+id/iv_attachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:padding="@dimen/dp5"
+                    android:contentDescription="@string/image" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:background="@drawable/btn_round_shape_red"
+                    android:text="Reject"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp5"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/bt_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:background="@drawable/btn_round_shape_green"
+                    android:text="Approve"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp5"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

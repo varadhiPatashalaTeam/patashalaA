@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/ll_main"
+    android:background="@color/orange_colorPrimaryDark"
+    tools:context=".Birthday.BirthdayInboxFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_backBtn"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:contentDescription="@string/image"/>
+
+            <TextView
+                android:id="@+id/text_view_assign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="Birthday"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/card_design">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/dp200"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/dp10"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/spinnerbackground">
+
+            <TextView
+                android:id="@+id/tv_teacher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_shape_other"
+                android:text="Staff"/>
+
+            <TextView
+                android:id="@+id/tv_student"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Student"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_class_section"
+            style="@style/cardViewStyle"
+            app:cardCornerRadius="@dimen/dp15"
+            app:cardElevation="-5dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:padding="@dimen/dp5"
+                style="@style/Ll_normal_htl">
+
+                <Spinner
+                    android:id="@+id/spn_class"
+                    style="@style/spinner"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"/>
+
+                <Spinner
+                    android:id="@+id/spn_section"
+                    style="@style/spinner"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp5"
+                    android:padding="@dimen/dp5"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <Spinner
+            android:id="@+id/spn_department"
+            style="@style/spinneer"
+            android:layout_marginBottom="@dimen/dp10"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/green"
+            android:textSize="22sp"
+            android:text="No have Data"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/tvNorecords"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

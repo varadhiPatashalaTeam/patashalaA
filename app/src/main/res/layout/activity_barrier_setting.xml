@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardModule.BarrierSettingActivity">
+
+    <LinearLayout style="@style/linearLayout_Normal_Vertical">
+
+        <LinearLayout
+            style="@style/linearLayout_MW"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/selectModule"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Select Module"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/maker_checker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Maker Checker"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            style="@style/linearLayout_MW"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Wings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/division"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Division"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout_MW"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Department"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Class"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout_MW"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/roles"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Roles"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/buttonSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Section"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/linearLayout_MW"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/staff_barriers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Staff Barriers"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/buttonSession"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Sessions"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

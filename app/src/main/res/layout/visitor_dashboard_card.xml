@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView style="@style/cardViewStyle"
+    android:layout_height="@dimen/dp150"
+    android:layout_margin="@dimen/dp5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout style="@style/linearLayout_Normal_Vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/baumans"
+                style="@style/textView_W0HM"
+                android:layout_weight=".7"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Today's Visitors"
+                android:textSize="12sp" />
+
+
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/ic_sync_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVisitors"
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_horizantal_H1WM"
+            android:background="@color/backgroundColor2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp120"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/llVistorsDataAvaialbleVisitors"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center">
+
+
+                    <in.varadhismartek.patashalaerp.GeneralClass.RingProgressBar
+                        android:layout_width="@dimen/dp80"
+                        android:layout_height="@dimen/dp80"
+                        app:ringColor="@color/orange_colorPrimary"
+                        app:ringWidth="7dp"
+                        app:max="100"
+                        app:textSize="@dimen/dp20"
+                        app:ringProgressColor="@color/blue_colorAccent"
+                        app:style="STROKE"
+                        android:visibility="gone"
+                        android:id="@+id/ringProgressVisitor"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center|start"
+                    android:layout_marginStart="@dimen/dp5">
+
+
+                    <TextView
+                        android:id="@+id/tvLastVisted"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Visited Person"
+                        android:gravity="end"
+                        android:textSize="8sp"
+                        android:visibility="gone"
+                        android:layout_marginEnd="@dimen/dp5"/>
+
+                    <TextView
+                        android:id="@+id/tvLastVisterName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:fontFamily="@font/baumans"
+                        android:textSize="@dimen/sp15"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvLastVisterNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_extralight"
+                        android:textSize="@dimen/sp12"
+
+                        android:layout_marginTop="@dimen/dp2"/>
+
+                    <TextView
+                        android:id="@+id/tvLastVisterPurpose"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp2"
+                        android:textSize="@dimen/sp12"
+                        android:fontFamily="@font/nunito_extralight" />
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDataNotAvailableVisitors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:src="@drawable/ic_no_data"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Visitors for Today"
+                    android:fontFamily="@font/nunito_extralight"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

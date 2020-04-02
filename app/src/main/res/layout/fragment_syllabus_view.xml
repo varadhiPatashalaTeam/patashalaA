@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Ll_both_match_heading">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:background="@drawable/toolbar_syllabus">
+
+        <LinearLayout
+            style="@style/Ll_normal_vtl"
+            android:layout_margin="@dimen/dp5">
+
+            <RelativeLayout
+                style="@style/Rl_normal">
+
+
+                <ImageView
+                    style="@style/imgvw_normal"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    android:id="@+id/img_back"
+                    android:layout_marginRight="@dimen/dp20"/>
+
+                <TextView
+                    style="@style/tv_normal"
+                    android:id="@+id/live_camera"
+                    android:text="View Syllabus"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18"
+                    android:layout_toRightOf="@id/img_back"
+                    android:layout_toEndOf="@id/img_back" />
+
+                <TextView
+                    style="@style/tv_normal"
+                    android:id="@+id/tv_examname"
+                    android:text="HalfYearly"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18"
+                    android:layout_alignParentRight="true" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        style="@style/Ll_normal_htl"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/ll_Schedule"
+        android:padding="@dimen/dp5"
+        android:baselineAligned="false">
+
+        <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+            style="@style/circleimagevw_normal"
+            android:layout_width="@dimen/dp80"
+            android:layout_height="@dimen/dp80"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_managment"/>
+
+        <LinearLayout
+            style="@style/Ll_weight_vtl"
+            android:layout_margin="@dimen/dp3">
+
+            <TextView
+                style="@style/tv_normal"
+                android:id="@+id/tv_SyllabusTitle"
+                android:text="Syllabus Title"
+                android:textSize="@dimen/dp22"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp10"/>
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:layout_margin="@dimen/dp5">
+
+                <TextView
+                    android:id="@+id/tv_addedBy"
+                    style="@style/tv_weight_normal"
+                    android:text="From Admin"
+                    android:layout_weight="1.2"/>
+
+                <TextView
+                    android:id="@+id/tv_addedDate"
+                    style="@style/tv_weight_normal"
+                    android:text="Nov 12.2019"
+                    android:textSize="@dimen/sp13"/>
+
+                <TextView
+                    android:id="@+id/tv_addedTime"
+                    style="@style/tv_weight_normal"
+                    android:text="12:50 Pm"
+                    android:textSize="@dimen/sp13"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:layout_margin="@dimen/dp5">
+
+                <TextView
+                    android:text="Class"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp13"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Section"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:textSize="@dimen/sp13"/>
+
+                <TextView
+                    android:id="@+id/tv_section"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp13"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_Schedule"
+        android:background="@drawable/border"
+        android:layout_margin="@dimen/dp8"
+        android:padding="@dimen/dp8"
+        android:layout_above="@+id/ll_normal"
+        android:text="India's history and culture is dynamic, spanning back to the beginning of human civilization. It begins with a mysterious culture along the Indus River and in farming communities in the southern lands of India. The history of India is punctuated by constant integration of migrating people with the diverse cultures that surround India. Available evidence suggests that the use of iron, copper and other metals was widely prevalent in the Indian sub-continent at a fairly early period, which is indicative of the progress that this part of the world had made. By the end of the fourth millennium BC, India had emerged as a region of highly developed civilization." />
+
+    <LinearLayout
+        android:id="@+id/ll_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card_design"
+        android:layout_marginTop="@dimen/dp30">
+
+        <TextView
+            style="@style/Rl_normal"
+            android:id="@+id/tv_Attachment"
+            android:text="Attachment"
+            android:gravity="center"
+            android:padding="@dimen/dp5"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

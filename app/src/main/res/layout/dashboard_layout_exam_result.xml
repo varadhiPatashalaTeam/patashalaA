@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F8F7F7">
+
+
+        <TextView
+            android:id="@+id/tvExamType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Internals"
+            android:textSize="@dimen/sp12"
+
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/tvClassSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Class 1(A)"
+            android:textSize="@dimen/sp12"
+
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Science"
+            android:textSize="@dimen/sp12"
+
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12/15"
+            android:textSize="@dimen/sp12"
+            android:gravity="center"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:background="#F3F0F0"/>
+
+</LinearLayout>

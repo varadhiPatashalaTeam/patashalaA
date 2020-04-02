@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayout_Normal_Vertical"
+    android:background="@color/barrier_green_colorPrimaryDark"
+    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp,ContentDescription,NestedWeights,HardcodedText,UselessParent,UseCompoundDrawables,DisableBaselineAlignment,UnusedAttribute,InefficientWeight">
+
+    <android.support.v7.widget.Toolbar style="@style/Toolbar">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imageViewNormal"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_chevron_left_black_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="Maker and Checker"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+        <ImageView
+            android:id="@+id/iv_saveCheckerMaker"
+            style="@style/Image_View"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dp10"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView style="@style/scrollView_WH">
+
+        <LinearLayout
+            style="@style/linearLayout_Normal_Vertical"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_design">
+
+            <Spinner
+                android:id="@+id/spinner_module"
+                style="@style/SpinnerStyleA"
+                android:layout_marginEnd="@dimen/dp55"
+                android:layout_marginStart="@dimen/dp55"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/spinnerbackground" />
+
+
+            <LinearLayout
+                style="@style/linearLayout_H_wrap"
+                android:layout_width="wrap_content"
+                android:layout_margin="@dimen/dp5">
+
+                <ImageView
+                    style="@style/imageViewNormal"
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:src="@drawable/maker_icon" />
+
+                <TextView
+                    style="@style/tv_normal"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="@string/makers"
+                    android:textSize="@dimen/sp17" />
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/linearLayout_H_wrap">
+
+                <LinearLayout
+                    style="@style/linearLayout_W0HM"
+                    android:layout_weight="4">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/linearLayout_M"
+                        android:layout_margin="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp1">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_maker"
+                            style="@style/linearLayout_M"
+                            android:background="@color/colorWhite"
+                            android:visibility="gone" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linearLayout_W0HM"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.5">
+
+                    <ImageButton
+                        android:id="@+id/maker_button"
+                        android:layout_width="@dimen/dp45"
+                        android:layout_height="@dimen/dp45"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/ic_add_fill" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W"
+                android:layout_margin="@dimen/dp5">
+
+                <ImageView
+                    android:layout_width="@dimen/dp25"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:src="@drawable/checker_icon" />
+
+                <TextView
+                    style="@style/linearLayout_W"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:gravity="center"
+                    android:text="@string/checkers"
+                    android:textSize="@dimen/sp17" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_MW"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    style="@style/linearLayout_W0HM"
+                    android:layout_weight="4">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/linearLayout_M"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="1dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_checker"
+                            style="@style/linearLayout_M"
+                            android:background="@color/colorWhite"
+                            android:visibility="gone" />
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/linearLayout_W0HM"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageButton
+                        android:id="@+id/checker_button"
+                        android:layout_width="@dimen/dp45"
+                        android:layout_height="@dimen/dp45"
+                        android:background="@color/colorWhite"
+                        android:src="@drawable/ic_add_fill" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_add"
+                android:layout_width="@dimen/dp200"
+                android:layout_height="@dimen/dp35"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp15"
+                android:layout_marginBottom="@dimen/dp10"
+                android:background="@drawable/add_back"
+                android:text="@string/add"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/recycler_chmamo"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Modules"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/makers"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    style="@style/linearLayout_W0HM"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/checkers"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_module"
+                style="@style/linearLayout_M"
+                android:layout_margin="5dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+

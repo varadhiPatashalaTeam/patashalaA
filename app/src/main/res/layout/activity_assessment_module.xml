@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Ll_both_match_heading"
+    android:background="@color/orange_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar style="@style/Toolbar">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="@string/assessment"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp15" />
+
+
+        <!--<ImageView
+            android:id="@+id/iv_sendAddDept"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dp10"
+            android:contentDescription="@string/backgroung" />-->
+
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_height="match_parent"
+        style="@style/Ll_normal_vtl"
+        android:background="@drawable/card_design">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp5">
+                    <LinearLayout
+                        android:id="@+id/ll_exam"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="80dp"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/ic_exam"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Exam"
+                            android:fontFamily="@font/baumans"
+                            android:textSize="15sp"
+                            android:textColor="@color/drak_grey"
+                            android:background="@color/white"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp5">
+                    <LinearLayout
+                        android:id="@+id/ll_curricular"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="80dp"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/ic_curricular"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Curricular"
+                            android:fontFamily="@font/baumans"
+                            android:textSize="15sp"
+                            android:textColor="@color/drak_grey"
+                            android:background="@color/white"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".3"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp5">
+                    <LinearLayout
+                        android:id="@+id/ll_sport"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="80dp"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/ic_trophy"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Sport"
+                            android:fontFamily="@font/baumans"
+                            android:textSize="15sp"
+                            android:textColor="@color/drak_grey"
+                            android:background="@color/white"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp5">
+                    <LinearLayout
+                        android:id="@+id/ll_schedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="@dimen/dp80"
+                            android:layout_height="80dp"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/ic_schedule_b"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Schedule"
+                            android:fontFamily="@font/baumans"
+                            android:textSize="15sp"
+                            android:textColor="@color/drak_grey"
+                            android:background="@color/white"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="@dimen/dp8"
+                    android:elevation="@dimen/dp5"
+                    android:layout_margin="@dimen/dp5">
+                    <LinearLayout
+                        android:id="@+id/ll_house"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".8"
+                            android:background="@color/green"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".2"
+                            android:gravity="center"
+                            android:text="Add Holiday"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/drak_grey"
+                            android:background="@color/white"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="invisible"
+                android:layout_weight=".5">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardElevation="@dimen/dp8"
+
+                    android:elevation="@dimen/dp5"
+                    android:layout_margin="@dimen/dp5">
+                    <LinearLayout
+                        android:id="@+id/ll_questionbank"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".8"
+                            android:background="@color/green"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight=".2"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:text="Add Event"
+                            android:textColor="@color/drak_grey"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".2"
+            android:orientation="horizontal"
+            tools:ignore="Suspicious0dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight=".5">
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

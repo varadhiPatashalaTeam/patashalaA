@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#f27037</color>
+    <color name="colorPrimaryDark">#05587e</color>
+    <color name="colorAccent">#4fa4d2</color>-->
+
+    <color name="colorPrimary">#72d548</color>
+    <color name="colorPrimaryDark">#52b155</color>
+    <color name="colorAccent">#1b9f41</color>
+
+
+    <color name="barrier_green_colorPrimary">#72d548</color>
+    <color name="barrier_green_colorPrimaryDark">#52b155</color>
+    <color name="barrier_red_colorAccent">#1b9f41</color>
+    <color name="white_trans">#4dffffff</color>
+
+
+    <color name="orange_colorPrimary">#f59642</color>
+    <color name="orange_colorPrimaryDark">#f2790d</color>
+    <color name="blue_colorAccent">#097db7</color>
+
+    <color name="textColor">#383838</color>
+    <color name="colorBlack">#7d7d7d</color>/>
+    <color name="colorWhite">#ffffff</color>/>
+
+    <color name="semi_white_transparant">#70ffffff</color>
+    <color name="trans_green">#F7CD91</color>
+    <color name="trans_gray">#D3D3D3</color>
+
+    <color name="hintColor">#717071</color>
+
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="textcolor">#7D7D7D</color>
+    <color name="backgroundColor2">#edeaea</color>
+    <color name="backgroundColor">#efefef</color>
+    <color name="marksRowColor">#4072d548</color>
+
+// new
+
+    <color name="grey">#7D7D7D</color>
+    <color name="drak_grey">#6F6D6D</color>
+    <color name="light_grey">#A0A0A0</color>
+
+    <color name="green">#000000</color>
+    <color name="blue">#097db7</color>
+    <color name="orange">#f2790d</color>
+    <color name="red">#ff0000</color>
+    <color name="maker_green">#FD0202</color>
+    <color name="yello_gold">#ffd700</color>
+
+    <!--Home work Barriers-->
+    <color name="master_admin">#1faa00</color>
+    <color name="color_other">#11DAE2</color>
+    <color name="color_other_btn">#41A5D3</color>
+    <color name="colorLight">#F5F5F5</color>
+    <color name="colorYellow">#FFC107</color>
+    <color name="adminColorAccenet">#EC430D</color>
+    <color name="lightColorRow">#FCF0F0</color>
+</resources>

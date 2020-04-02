@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Ll_both_match_heading"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/dp185"
+    android:layout_marginRight="@dimen/dp185"
+    android:gravity="center">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/cardViewStyle"
+        app:cardCornerRadius="@dimen/dp5"
+        app:cardElevation="@dimen/dp5"
+        android:layout_marginStart="@dimen/dp25"
+        android:layout_marginEnd="@dimen/dp25"
+        app:cardBackgroundColor="@color/backgroundColor2"
+        >
+
+        <LinearLayout
+            style="@style/Ll_normal_vtl">
+
+            <TextView
+                style="@style/tv_normal"
+                android:text="@string/set_default"
+                android:textSize="@dimen/sp19"
+                android:padding="@dimen/dp5"
+                android:layout_gravity="center"/>
+
+            <View
+                style="@style/view_horizantal_heightwrapcontent"
+                android:background="@color/hintColor"/>
+
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:layout_marginTop="@dimen/dp20">
+
+                <LinearLayout
+                    android:id="@+id/finger_ll"
+                    android:layout_height="match_parent"
+                    style="@style/Ll_weight_vtl"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:id="@+id/fingerAuth"
+                        style="@style/imgview_55dp"
+                        android:background="@drawable/ic_fingerprint_grey"
+                        android:padding="@dimen/dp15"
+                        android:contentDescription="@string/finger_print" />
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/mpin_ll"
+                    android:layout_height="match_parent"
+                    style="@style/Ll_weight_vtl"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground"
+                    >
+
+                    <ImageView
+                        android:id="@+id/mPinAuth"
+                        style="@style/imgview_55dp"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/ic_lock_a"
+                        android:padding="15dp"
+                        android:contentDescription="@string/checker" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <TextView
+                style="@style/tv_normal"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:text="@string/select_to_choose_default_login_method"/>
+
+            <View
+                style="@style/view_horizantal_heightwrapcontent"
+                android:background="@color/hintColor"
+                android:layout_marginTop="@dimen/dp5"/>
+
+
+            <LinearLayout
+                style="@style/Ll_normal_htl">
+
+                <LinearLayout
+                    android:id="@+id/fingerPrintBtnLayout"
+                    android:layout_height="match_parent"
+                    style="@style/Ll_weight_vtl"
+                    android:gravity="center"
+                    android:background="?attr/selectableItemBackground">
+
+                    <Button
+                        android:id="@+id/btn_fingerPrint"
+                        style="@style/button_bothwrp"
+                        android:text="@string/finger_print"
+                        android:textColor="@color/hintColor"
+                        android:background="@android:color/transparent"/>
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/viewVertical"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    style="@style/view_horizantal_heightwrapcontent"
+                    android:background="#b1b0b0"
+                    android:layout_weight="0.01"/>
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    style="@style/Ll_weight_vtl"
+                    android:background="?attr/selectableItemBackground"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_mpin"
+                        style="@style/button_bothwrp"
+                        android:textColor="@color/hintColor"
+                        android:text="@string/mpin"
+                        android:background="@android:color/transparent"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

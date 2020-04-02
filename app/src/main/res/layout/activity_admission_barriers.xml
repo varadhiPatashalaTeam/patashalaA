@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:background="@color/barrier_green_colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="Barrier"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_managment" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editText_admissionNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/admission_number"
+                    android:inputType="textCapCharacters"
+                    android:textColor="@color/hintColor"
+                    android:textColorHint="@color/hintColor"
+                    tools:ignore="TextFields" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editText_percentage_for_admission"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/enter_minimum_required_for_admission"
+                    android:inputType="numberDecimal|numberDecimal"
+                    android:maxLength="5"
+                    android:textColor="@color/hintColor"
+                    android:textColorHint="@color/hintColor" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@color/barrier_green_colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="@string/qualification"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerCustomForFather"
+                        style="@style/spinner"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1" />
+
+
+                    <Spinner
+                        android:id="@+id/spinnerCustomForMother"
+                        style="@style/spinner"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/barrier_green_colorPrimaryDark"
+                    android:gravity="center"
+                    android:text="@string/facility"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/hintColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/checkbox_food_facility"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/food"
+                        android:textColor="@color/hintColor" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_transport_facility"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/transport"
+                        android:textColor="@color/hintColor" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/hintColor" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:hint="@string/guardians"
+                        android:textColorHint="@color/hintColor"
+                        android:textSize="17sp" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_incrementing_child_perTeaching1"
+                        style="@style/linearlayout_wwrap_hwrp_gc">
+
+                        <TextView
+                            android:id="@+id/button_decrease_count"
+                            style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                            android:text="-"
+                            android:textSize="@dimen/sp20" />
+
+                        <TextView
+                            android:id="@+id/numberOfGuardians"
+                            style="@style/txtviw_15dp_h28dp_wgt1_gc"
+                            android:text="1" />
+
+                        <TextView
+                            android:id="@+id/button_increase_count"
+                            style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                            android:text="+"
+                            android:textSize="@dimen/sp18" />
+
+                    </LinearLayout>
+
+
+                    <!-- <Button
+                         android:id="@+id/button_decrease_count"
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:background="@color/barrier_green_colorPrimaryDark"
+                         android:gravity="center"
+                         android:text="@string/decrease"
+                         android:textColor="@color/white"
+                         android:textSize="21sp" />
+
+                     <TextView
+                         android:id="@+id/numberOfGuardians"
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:background="#fff"
+                         android:gravity="center"
+                         android:inputType="number"
+                         android:text="@string/_1"
+                         android:textColor="@color/barrier_green_colorPrimaryDark"
+                         android:textSize="21sp"
+                         tools:ignore="LabelFor,TextViewEdits" />
+
+                     <Button
+                         android:id="@+id/button_increase_count"
+                         android:layout_width="40dp"
+                         android:layout_height="40dp"
+                         android:background="@color/barrier_green_colorPrimaryDark"
+                         android:gravity="center"
+                         android:text="@string/increase"
+                         android:textColor="@color/white"
+                         android:textSize="21sp" />-->
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editText_staffNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="Starting Staff number*"
+                        android:inputType="textCapCharacters"
+                        android:textColor="@color/hintColor"
+                        android:textColorHint="@color/hintColor"
+                        tools:ignore="TextFields" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    style="@style/button_normal"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/dp75"
+                    android:layout_marginStart="@dimen/dp75"
+                    android:layout_marginTop="@dimen/dp15"
+                    android:background="@drawable/add_back"
+                    android:text="@string/add"
+                    android:textSize="@dimen/sp17"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+

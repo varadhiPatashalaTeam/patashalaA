@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/barrier_green_colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Add Roles"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17sp" />
+
+        <ImageView
+            android:id="@+id/iv_sendAddRoles"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_design"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/wings"
+                    style="@style/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/dept"
+                    style="@style/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/Ll_normal_htl">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/textinputlaout_weight"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:id="@+id/edit_enter"
+                        style="@style/edittext_normal"
+                        android:digits="@string/alphanumeric"
+                        android:focusable="true"
+                        android:hint="Add Roles"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="19sp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <ImageButton
+                    android:id="@+id/add_image"
+                    style="@style/imgview_bothmatchcontent"
+                    android:layout_width="@dimen/dp0"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp10"
+                    android:layout_weight=".2"
+                    android:background="@drawable/image_backgroung_green"
+                    android:src="@drawable/ic_add_symbol"
+                    tools:ignore="ContentDescription,InefficientWeight" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f1f1f1"
+                android:padding="5dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_NORecords"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                android:src="@drawable/download" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/button_added"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="75dp"
+            android:background="@drawable/add_back"
+            android:text="Add"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

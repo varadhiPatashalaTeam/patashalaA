@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:baselineAligned="false"
+    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp,ContentDescription,NestedWeights,HardcodedText,UselessParent,UseCompoundDrawables,DisableBaselineAlignment,UnusedAttribute,InefficientWeight">
+
+</LinearLayout>

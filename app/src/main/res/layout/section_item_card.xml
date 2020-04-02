@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_normal_htl"
+    android:gravity="center_vertical"
+    android:id="@+id/layout_section"
+    android:elevation="@dimen/dp2"
+    tools:targetApi="lollipop">
+
+    <TextView
+        android:id="@+id/tv_class"
+        style="@style/tv_normal"
+        android:layout_width="match_parent"
+        android:text="@string/data"
+        android:textSize="@dimen/sp18"
+        android:layout_margin="@dimen/dp10"
+        android:paddingStart="@dimen/dp10"
+        android:paddingLeft="@dimen/dp10"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|start"
+        tools:ignore="RtlSymmetry" />
+
+    <!--<View style="@style/Divider"/>-->
+
+    <View
+        android:layout_width="@dimen/dp1"
+        android:layout_height="match_parent"
+        android:background="?android:attr/listDivider"/>
+
+    <TextView
+        android:id="@+id/tv_section"
+        android:layout_width="match_parent"
+        style="@style/tv_normal"
+        android:text="@string/data"
+        android:textSize="@dimen/sp18"
+        android:paddingEnd="@dimen/dp10"
+        android:paddingRight="@dimen/dp10"
+        android:layout_margin="@dimen/dp10"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|end"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+</LinearLayout>

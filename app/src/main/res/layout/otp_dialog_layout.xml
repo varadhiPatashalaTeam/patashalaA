@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_normal_vtl"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/dp40"
+    android:layout_marginRight="@dimen/dp40">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/cardView_both_wrap_content"
+        android:layout_margin="@dimen/dp1"
+        app:cardCornerRadius="@dimen/dp15"
+        app:cardElevation="@dimen/dp4"
+        app:cardMaxElevation="@dimen/dp5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/Rl_both_matchparent"
+                android:layout_marginTop="@dimen/dp1">
+
+                <ImageView
+                    android:id="@+id/iv_cancel"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_close_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/iv_logo"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp120"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/dp5"
+                    android:elevation="@dimen/dp10" />
+
+
+                <View
+                    android:id="@+id/viewOtp2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/iv_logo"
+                    android:layout_marginTop="@dimen/dp1"
+                    android:layout_marginBottom="@dimen/dp3"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/orange_colorPrimaryDark"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textViewMobileNumber"
+                    style="@style/tv_normal"
+                    android:layout_below="@+id/viewOtp2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Verification Code"
+                    android:textColor="#52b155"
+                    android:textSize="@dimen/sp15"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_OtpMobileNo"
+                    style="@style/tv_normal"
+                    android:layout_below="@+id/textViewMobileNumber"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:textColor="#787878"
+                    android:textSize="@dimen/sp12" />
+
+                <LinearLayout
+                    android:id="@+id/linearEtBox"
+                    style="@style/Ll_normal_htl"
+                    android:layout_below="@+id/tv_OtpMobileNo"
+                    android:layout_marginTop="@dimen/dp5">
+
+                    <in.varadhismartek.patashalaerp.GeneralClass.Mpin
+                        android:id="@+id/mPinOtp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:focusable="true"
+                        app:inputType="number"
+                        app:password="false"
+                        app:pinBackground="@drawable/example_drawable"
+                        app:pinHeight="@dimen/dp25"
+                        app:pinLength="4"
+                        app:pinWidth="@dimen/dp25" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/viewOtp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/linearEtBox"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:layout_marginRight="@dimen/dp40"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/orange_colorPrimaryDark"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    style="@style/tv_normal"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/viewOtp"
+                    android:layout_marginTop="@dimen/dp8"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:fontFamily="serif"
+                    android:gravity="center"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    style="@style/Ll_normal_htl"
+                    android:layout_below="@+id/textView7"
+                    android:layout_margin="@dimen/dp8"
+
+                    >
+
+                    <Button
+                        android:id="@+id/otp_resendCode"
+                        style="@style/button_normal_weight"
+                        android:background="@drawable/btn_round_shape_green"
+                        android:text="RESEND"
+                        android:elevation="@dimen/dp8"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <Button
+                        android:id="@+id/otp_ok"
+                        style="@style/button_normal_weight"
+                        android:background="@drawable/btn_round_shape_green"
+                        android:text="OK"
+                        android:elevation="@dimen/dp8"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

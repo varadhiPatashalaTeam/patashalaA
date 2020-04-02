@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                android:id="@+id/text_view_assign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Transport"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp40"
+        android:background="#F1f3F4"
+        android:layout_marginTop="0.05dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tv_Vehicle"
+            android:layout_width="@dimen/dp0"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_round_shape_green"
+            android:layout_height="match_parent"
+            android:text="Add Vehicle"/>
+        <TextView
+            android:id="@+id/tv_Route"
+            android:layout_width="@dimen/dp0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_weight=".5"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="Add Route"/>
+    </LinearLayout>
+
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container"/>
+
+</LinearLayout>

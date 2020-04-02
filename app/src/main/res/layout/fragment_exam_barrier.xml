@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/barrier_green_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="Add Exam Barriers"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp"
+            android:visibility="gone" />
+
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="@dimen/dp0"
+        android:background="@drawable/card_design">
+
+        <LinearLayout style="@style/Ll_both_match_heading">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_marginRight="@dimen/dp2"
+                android:layout_marginBottom="@dimen/dp5"
+                android:elevation="@dimen/dp5"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   android:layout_margin="@dimen/dp5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl"
+                        android:background="@drawable/card_design"
+                        android:padding="@dimen/dp0">
+
+                        <Spinner
+                            android:id="@+id/spExamType"
+                            style="@style/spinner_weight"
+                            android:layout_margin="@dimen/dp1" />
+
+                        <Spinner
+                            android:id="@+id/spDivision"
+                            style="@style/spinner_weight"
+                            android:layout_margin="@dimen/dp1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@drawable/card_design"
+                        android:padding="@dimen/dp0">
+
+                        <Spinner
+                            android:id="@+id/spClass"
+                            style="@style/spinner_weight"
+                            android:layout_margin="@dimen/dp1" />
+
+                        <Spinner
+                            android:id="@+id/spn_section"
+                            style="@style/spinner_weight"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/dp1" />
+                        <Spinner
+                            android:id="@+id/spSubject"
+                            style="@style/spinner_weight"
+                            android:layout_margin="@dimen/dp1" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@drawable/card_design"
+                        android:minHeight="@dimen/dp35"
+                        android:padding="@dimen/dp0">
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp2"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_weight=".33"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/ed_minmarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:hint="Min Marks"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:paddingStart="@dimen/dp10"
+                                android:textSize="@dimen/sp14"
+                                tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_weight=".32"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/ed_maxmarks"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:hint="Max Marks"
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:paddingStart="@dimen/dp10"
+                                android:textSize="@dimen/sp14"
+                                tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".35"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:minHeight="@dimen/dp35"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/ed_examDuration"
+                                android:layout_width="match_parent"
+                                android:layout_weight=".5"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:hint="Exam Duration "
+                                android:inputType="number"
+                                android:maxLength="3"
+                                android:paddingLeft="@dimen/dp5"
+                                android:textSize="@dimen/sp14"
+                                tools:ignore="Autofill,RtlSymmetry,TextFields"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp0"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/dp0"
+                            android:layout_weight=".5"
+                            android:background="@color/white"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvAdd"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="30dp"
+                                android:background="@drawable/btn_round_shape_green"
+                                android:gravity="center"
+                                android:text="Add"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

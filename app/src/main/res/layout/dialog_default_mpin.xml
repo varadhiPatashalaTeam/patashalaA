@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="@dimen/dp50"
+        style="@style/Ll_normal_htl"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_weight="0.3">
+
+        <FrameLayout
+            android:id="@+id/frameLayout_close_keyboard"
+            android:layout_width="wrap_content"
+            style="@style/Fl_normal"
+            android:layout_gravity="end"
+            android:foreground="@drawable/press_button_white_transparant">
+
+
+        </FrameLayout>
+
+
+        <RelativeLayout
+            style="@style/Rl_both_matchparent"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/imgview_bothmatchcontent"
+                android:layout_height="@dimen/dp80"
+                android:background="@drawable/background_shape"
+                android:contentDescription="@string/backgroung" />
+
+            <ImageView
+                android:id="@+id/overflowMenu"
+                style="@style/Image_View"
+                android:layout_height="@dimen/pin_min_width"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/dp5"
+                android:visibility="gone"
+                android:src="@drawable/ic_more_vert_black_24dp"
+                android:contentDescription="@string/backgroung" />
+
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+               style="@style/circleimagevw_normal"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                app:civ_border_color="#ff7c1e"
+                app:civ_border_overlay="true"
+                android:src="@drawable/management_logo"
+                android:id="@+id/cvUserImage"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        style="@style/Ll_normal_htl"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:fontFamily="@font/baumans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textSize="@dimen/sp17"/>
+
+
+        <android.support.v7.widget.CardView
+            style="@style/cardViewStyle"
+            android:layout_marginBottom="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp40"
+            android:layout_marginStart="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp5"
+            app:cardCornerRadius="@dimen/dp5"
+            app:cardElevation="@dimen/dp5">
+
+            <LinearLayout
+                android:id="@+id/linaerLayout_labelPin"
+                style="@style/Ll_normal_vtl"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/tv_normal"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="@string/login_with_mpin"
+                    android:textColor="#3b97b9"
+                    android:textSize="@dimen/sp14" />
+
+                <View
+                    style="@style/view_horizantal_heightwrapcontent"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="#dfdddd" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    style="@style/Ll_normal_htl"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp15">
+
+                    <TextView
+                        android:id="@+id/textView_pin1"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        style="@style/tv_normal"
+                        android:layout_weight="1"
+                        android:background="@drawable/non_selected_item" />
+
+                    <TextView
+                        android:id="@+id/textView_pin2"
+                        style="@style/tv_normal"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginLeft="@dimen/margin_pin"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:layout_weight="1"
+                        android:background="@drawable/non_selected_item"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/textView_pin3"
+                        style="@style/tv_normal"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginLeft="@dimen/margin_pin"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:layout_weight="1"
+                        android:background="@drawable/non_selected_item"
+                        tools:ignore="RtlHardcoded" />
+
+                    <TextView
+                        android:id="@+id/textView_pin4"
+                        style="@style/tv_normal"
+                        android:layout_width="@dimen/dp25"
+                        android:layout_height="@dimen/dp25"
+                        android:layout_marginLeft="@dimen/margin_pin"
+                        android:layout_marginStart="@dimen/dp20"
+                        android:layout_weight="1"
+                        android:background="@drawable/non_selected_item"
+                        tools:ignore="RtlHardcoded" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#dfdddd" />
+
+                <TextView
+                    android:id="@+id/tv_useFingerprint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/use_fingerprint"
+                    android:textColor="#797979"
+                    android:textSize="17sp"
+                    android:fontFamily="@font/baumans"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"/>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="@dimen/dp0"
+        style="@style/Ll_normal_htl"
+        android:layout_weight="0.2"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ForgetMpin"
+            style="@style/tv_normal_weight"
+            android:text="@string/forget"
+            android:textSize="@dimen/sp17"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#bbbbbc"/>
+
+        <TextView
+            android:id="@+id/ResetMpin"
+            style="@style/tv_normal_weight"
+            android:text="@string/reset"
+            android:textSize="@dimen/sp17"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#bbbbbc"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Ll_normal_htl"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp5"
+            style="@style/Ll_weight_vtl"
+            android:gravity="center"
+            tools:ignore="Suspicious0dp"
+            android:baselineAligned="false">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/Ll_weight_htl"
+                android:layout_gravity="center"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number1"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:text="@string/_1" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number2"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_2" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number3"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_3" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                style="@style/Ll_weight_htl"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number4"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:text="@string/_4" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number5"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_5" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number6"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_6" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                style="@style/Ll_weight_htl"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number7"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:text="@string/_7" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number8"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_8" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number9"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_9" />
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                style="@style/Ll_normal_htl"
+                android:layout_gravity="center"
+                android:baselineAligned="false">
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_deletePin"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_gravity="start"
+                        android:background="@drawable/clear_btn"
+                        android:text="@string/c"
+                        android:textColor="@color/white"
+
+                        />
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_number0"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_marginStart="50dp"
+                        android:text="@string/_0" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frameLayout_next"
+                    style="@style/keyboard_pressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/keypadNumberTextView"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="50dp"
+                        android:textColor="@color/white"
+                        android:padding="@dimen/dp16"
+                        android:background="@drawable/ok_btn"
+                        android:drawableStart="@drawable/ic_check_black_24dp"
+                        />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                style="@style/Ll_normal_htl"
+                android:baselineAligned="false"
+                tools:ignore="InefficientWeight">
+
+                <FrameLayout
+                    android:layout_weight="1"
+                    style="@style/Fl_both_match_parent"
+                    android:background="@drawable/wave_orange"
+                    tools:ignore="NestedWeights">
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:text="@string/enter_marks"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/dp10"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_popup"
+        android:paddingStart="@dimen/dp10"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a_plus_plus"
+        android:textSize="@dimen/sp30"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/dp10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/from"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginStart="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/et_fromMarks"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp50"
+                android:hint="@string/eighty"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/marks_bg"
+                android:padding="@dimen/dp10"
+                android:maxLength="3"
+                android:layout_marginLeft="@dimen/dp10"
+                android:textSize="@dimen/sp18"
+                android:layout_marginStart="@dimen/dp5"
+                tools:ignore="Autofill" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/dp20"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginEnd="@dimen/dp20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/to"
+                android:layout_marginLeft="@dimen/dp20"
+                android:layout_marginStart="@dimen/dp20" />
+
+            <EditText
+                android:id="@+id/et_ToMarks"
+                android:layout_width="@dimen/dp70"
+                android:layout_height="@dimen/dp50"
+                android:hint="@string/eighty"
+                android:maxLength="3"
+                android:inputType="number"
+                android:gravity="center"
+                android:background="@drawable/marks_bg"
+                android:padding="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp5"
+                android:textSize="@dimen/sp18"
+                android:layout_marginStart="@dimen/dp5"
+                tools:ignore="Autofill" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="@string/add"
+        android:gravity="center"
+        android:textSize="@dimen/sp15"
+        android:textColor="@color/white"
+        android:background="#52b155"/>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Ll_normal_vtl">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:id="@+id/ll_left"
+            android:layout_weight="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/reply_cv"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:layout_margin="@dimen/dp5"
+            app:cardElevation="@dimen/dp3"
+            app:cardCornerRadius="@dimen/dp5"
+            android:layout_width="300dp">
+
+
+            <LinearLayout
+                style="@style/Ll_normal_vtl"
+                android:padding="@dimen/dp5">
+
+                <LinearLayout
+                    style="@style/Ll_normal_htl"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content">
+
+                        <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                            android:id="@+id/civ_image"
+                            style="@style/circleimagevw_normal"
+                            android:background="@drawable/circle_solid_green"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Names"
+                                android:id="@+id/tv_Name"
+                                android:layout_weight="1"
+                                android:layout_margin="@dimen/dp5"/>
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Date And Time"
+                                android:id="@+id/tv_date_time"
+                                android:layout_margin="@dimen/dp5"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Id No"
+                            android:id="@+id/tv_id_num"
+                            android:layout_margin="@dimen/dp5"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/Rl_normal"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5"
+                    android:layout_margin="@dimen/dp5"
+                    android:gravity="start"
+                    android:maxLines="3"
+                    android:text="@string/description"
+                    android:id="@+id/tv_Description"
+                    android:background="@drawable/bg_edittext"/>
+
+               <android.support.v7.widget.RecyclerView
+                   android:id="@+id/image_rv"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+               </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_right"
+            android:layout_weight="0.3"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

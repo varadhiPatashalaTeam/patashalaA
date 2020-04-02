@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayout_Normal_Vertical"
+    android:layout_margin="@dimen/dp5"
+    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp,ContentDescription,NestedWeights,HardcodedText,UselessParent,UseCompoundDrawables,DisableBaselineAlignment,UnusedAttribute,InefficientWeight">
+
+    <android.support.v7.widget.CardView
+        style="@style/cardViewStyle"
+        android:layout_margin="@dimen/dp1">
+
+        <LinearLayout
+            style="@style/linearLayout_Normal_Vertical"
+            android:layout_margin="@dimen/dp5">
+            <LinearLayout
+                style="@style/linearLayout_MW"
+                android:paddingRight="@dimen/dp10"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/textView_W0HM"
+                    android:layout_weight=".5"
+                    android:gravity="center|left"
+                    android:text="@string/galley"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/sp12"/>
+                <TextView
+                    android:id="@+id/gallery_viewmore"
+                    style="@style/textView_W0HM"
+                    android:textSize="@dimen/sp12"
+                    android:layout_weight=".5"
+                    android:gravity="center|right"
+                    android:text="@string/view_more"
+                    android:textColor="@color/textcolor"
+                    />
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardmain"
+                style="@style/cardViewStyle"
+                android:layout_height="@dimen/dp150"
+                android:layout_margin="@dimen/dp2"
+                android:padding="@dimen/dp5"
+                app:cardElevation="@dimen/dp5"
+                tools:ignore="InefficientWeight">
+
+                <LinearLayout
+                    style="@style/linearLayout_H_wrap"
+                    android:baselineAligned="false"
+                    android:padding="@dimen/dp5">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_gallery_image"
+                style="@style/recyclerView_M"
+                        android:layout_gravity="center"
+                        android:background="@color/white" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dp10"
+    android:layout_marginRight="@dimen/dp10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_book_name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp40"
+            android:layout_margin="@dimen/dp2"
+            android:layout_weight=".6"
+            android:background="@drawable/bg_edittext"
+            android:gravity="bottom"
+            android:inputType="textCapWords"
+            android:digits="@string/alphabetic"
+            android:hint="Book Name"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/sp14" />
+
+        <EditText
+            android:id="@+id/et_page_no"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp40"
+            android:layout_margin="@dimen/dp2"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_weight=".4"
+            android:background="@drawable/bg_edittext"
+            android:gravity="bottom"
+            android:hint="Page No"
+            android:inputType="number"
+            android:padding="@dimen/dp5"
+            android:textSize="@dimen/sp14" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

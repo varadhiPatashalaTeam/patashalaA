@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="Add Subject"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp"
+            android:visibility="gone" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/card_design">
+
+        <LinearLayout style="@style/Ll_both_match_heading">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp5"
+                android:elevation="5dp"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_margin="@dimen/dp2"
+                        android:gravity="center|top">
+
+                        <Spinner
+                            android:id="@+id/spDivision"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_weight=".33"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_height="@dimen/dp40"
+                            android:background="@drawable/spinnerbackground"/>
+
+                        <Spinner
+                            android:id="@+id/spClass"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_weight=".33"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_height="@dimen/dp40"
+                            android:background="@drawable/spinnerbackground"/>
+
+                        <Spinner
+                            android:id="@+id/spSection"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_weight=".33"
+                            android:layout_height="@dimen/dp40"
+                            android:background="@drawable/spinnerbackground" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl"
+                        android:background="@drawable/card_design"
+                        android:focusableInTouchMode="true"
+                        android:padding="@dimen/dp5">
+
+
+                        <EditText
+                            android:id="@+id/ed_sub_name"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_weight=".33"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:hint="Subject Name"
+                            android:inputType="textCapSentences"
+                            android:gravity="center"
+                            android:digits="@string/alphabetic"
+                            android:focusableInTouchMode="true"
+                            android:layout_marginRight="5dp"
+                            android:textSize="@dimen/sp14"
+                            tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+
+
+
+                        <EditText
+                            android:id="@+id/ed_sub_code"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_weight=".33"
+                            android:focusableInTouchMode="true"
+                            android:digits="@string/alphabetic"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:hint="Subject Code"
+                            android:inputType="textCapCharacters"
+                            android:gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:textSize="@dimen/sp14"
+                            android:maxHeight="@dimen/dp5"
+                            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextFields" />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl"
+                        android:background="@drawable/card_design"
+                        android:layout_marginTop="@dimen/dp2">
+
+
+                        <Spinner
+                            android:id="@+id/ed_subject_type"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_weight=".5"
+                            android:background="@drawable/spinnerbackground"
+                            android:hint="Subject Type"
+                            android:gravity="center"
+                            android:inputType="textCapSentences"
+                            android:textSize="@dimen/sp14"
+                            tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+
+
+                        <LinearLayout
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:layout_weight=".5"
+                            android:gravity="right"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvAdd"
+                                android:layout_width="@dimen/dp100"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/btn_round_shape_green"
+                                android:gravity="center"
+                                android:text="Add"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_subject"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp8"
+                android:gravity="center"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/section_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp16"
+                    android:gravity="center"
+                    />
+
+
+                <!--<RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".2"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/section_tv"
+                        android:layout_width="50dp"
+                        android:layout_height="@dimen/dp50"
+                        android:background="@drawable/circle_bg"
+                        android:gravity="center"
+                        />
+
+                </RelativeLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp2"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/dp5"
+                        android:background="@drawable/sample_background" />
+
+
+                    <TextView
+                        android:id="@+id/tvNorecords"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="No Subject Records"
+                        android:textSize="20sp"
+                        android:visibility="gone"
+                        android:textColor="@color/green"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

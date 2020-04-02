@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/dp0"
+    android:background="@color/white"
+    android:elevation="@dimen/dp1"
+    android:orientation="vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp,ContentDescription,NestedWeights,HardcodedText,UselessParent,UseCompoundDrawables,DisableBaselineAlignment,UnusedAttribute,InefficientWeight">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".2"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_margin="@dimen/dp2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                        android:id="@+id/iv_schoolLogo"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:background="@drawable/circle_solid_green"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".75"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:background="@drawable/card_shape"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/search"
+                        style="@style/imageViewNormal"
+                        android:layout_weight="0.2"
+                        android:contentDescription="@string/search"
+                        android:padding="@dimen/dp3"
+                        android:src="@drawable/ic_search_black_24dp" />
+
+                    <AutoCompleteTextView
+                        android:fontFamily="@font/baumans"
+                        android:id="@+id/et_search"
+                        style="@style/Ll_weight_vtl"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_weight="5"
+                        android:background="@null"
+                        android:focusableInTouchMode="true"
+                        android:hint="@string/search_member"
+                        android:padding="@dimen/dp5" />
+
+                    <ImageView
+                        android:id="@+id/ivRefresh"
+                        style="@style/imageViewNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/voice_icon"
+                        android:visibility="visible"
+                        android:layout_marginEnd="@dimen/dp5"
+                        android:src="@drawable/ic_sync_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/edit_setting"
+                        style="@style/imageViewNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/settings"
+                        android:padding="@dimen/dp5"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_settings" />
+
+                    <ImageView
+                        android:id="@+id/iv_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp15"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ic_logout" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:src="@drawable/ic_down_key_fill"
+            android:layout_marginTop="35dp"
+            app:civ_circle_background_color="@color/white"
+            android:layout_gravity="bottom|center"
+            android:id="@+id/ivSlideImage"
+            android:onClick="openTopSheetDialog"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/custom_toolbar"
+            android:id="@+id/cust_tool"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:minHeight="@dimen/dp40"
+            android:background="@color/orange_colorPrimaryDark"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/sp_class"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/spinnerbackground"
+                android:layout_margin="@dimen/dp5" />
+            <Spinner
+                android:id="@+id/sp_section"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:background="@drawable/spinnerbackground"
+                android:layout_margin="@dimen/dp5" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+
+            android:background="#F5F5F5"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp22"
+            android:textStyle="bold|italic"
+            android:textColor="@color/grey"
+            android:text="No Records"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/noRecords"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dp20"
+        android:src="@drawable/ic_add"
+        android:background="@color/green"/>
+
+</RelativeLayout>

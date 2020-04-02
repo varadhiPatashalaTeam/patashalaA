@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Ll_both_match_heading"
+    android:background="@color/backgroundColor">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:id="@+id/toolbar"
+        android:background="@drawable/toolbar_syllabus">
+
+        <LinearLayout
+            style="@style/Ll_normal_vtl"
+            android:layout_marginTop="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    style="@style/imgvw_normal"
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    android:id="@+id/img_back" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Add Syllabus"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+
+                <Spinner
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_weight="1"
+                    android:background="@drawable/spinnerbackground"
+                    android:id="@+id/sp_ExamType" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:layout_margin="@dimen/dp5">
+
+                <Spinner
+                    android:id="@+id/sp_class"
+                    style="@style/spinner_weight" />
+
+                <Spinner
+                    android:id="@+id/sp_subject"
+                    style="@style/spinner_weight" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/textinputlaout_wmatch_hwrap"
+        android:id="@+id/Syllabus_Title"
+        android:layout_below="@id/toolbar">
+
+
+        <EditText
+            style="@style/edittext_normal"
+            android:id="@+id/edt_Syllabus_Title"
+            android:hint="Syllabus Title"
+            android:layout_margin="@dimen/dp10"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp100"
+        android:id="@+id/edt_Description"
+        android:layout_below="@id/Syllabus_Title"
+        android:gravity="start"
+        android:padding="5dp"
+        android:digits="@string/alphabetic"
+        android:inputType="text|textCapWords"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/bg_edittext"
+        android:maxLines="3"
+        android:hint="Description"/>
+
+    <!--<RelativeLayout
+        style="@style/Rl_normal"
+        android:layout_below="@id/edt_Description"
+        android:layout_marginTop="@dimen/dp30">-->
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_Attachment"
+        android:layout_below="@id/edt_Description"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center"
+        android:layout_width="@dimen/dp35"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dp10"
+        android:background="@color/orange_colorPrimaryDark"
+        android:src="@drawable/ic_attachment_icon"
+        android:padding="3dp"
+        android:textColor="@color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_attachment"
+        android:layout_below="@id/tv_Attachment"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <!--<Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/ll_attachimg"
+        android:id="@+id/btn_submit"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/background_shape"/>-->
+
+    <Button
+        android:id="@+id/btn_submit"
+        style="@style/button_normal"
+        android:minWidth="@dimen/dp120"
+        android:background="@drawable/btn_round_shape_green"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp10"
+        android:text="Submit" />
+
+    <!-- </RelativeLayout>-->
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayout_Normal_Vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v7.widget.CardView
+        style="@style/cardViewStyle"
+        android:layout_margin="@dimen/dp4">
+
+
+        <LinearLayout
+            style="@style/linearLayout_Normal_Vertical">
+
+
+
+            <TextView
+                style="@style/tv_normal"
+                android:layout_weight="1"
+                android:text="@string/birthdays"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/sp12"
+                android:layout_margin="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                tools:ignore="InefficientWeight" />
+
+
+            <View
+                style="@style/view_horizantal_H1WM"
+                android:background="@color/backgroundColor2"/>
+
+            <RelativeLayout
+                style="@style/scrollView_WH"
+                android:background="#b1ffffff">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/imagecard"
+                    android:layout_width="wrap_content"
+                    style="@style/cardViewStyle"
+                    android:layout_margin="@dimen/dp8"
+                    app:cardElevation="@dimen/dp5"
+                    app:cardCornerRadius="@dimen/dp5">
+
+                    <ImageView
+                        android:id="@+id/imageview"
+                        style="@style/imageViewNormal"
+                        android:layout_width="@dimen/dp70"
+                        android:layout_height="@dimen/dp70"
+                        android:scaleType="fitXY"
+                        android:layout_margin="@dimen/dp2"
+                        android:background="@color/white"
+                        android:contentDescription="@string/image" />
+                    <View
+                        tools:ignore="RtlHardcoded"
+                        style="@style/birthday_view" />
+
+
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textname"
+                    android:text=""
+                    style="@style/tv_normal"
+                    android:layout_toRightOf="@id/imagecard"
+                    android:layout_margin="@dimen/dp10"
+                    android:textColor="@color/colorAccent"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/imagecard" />
+
+                <TextView
+                    android:id="@+id/textwish"
+                    style="@style/tv_normal"
+                    android:text="@string/wish_them_to_happy_birthday"
+                    android:layout_toRightOf="@id/imagecard"
+                    android:layout_margin="@dimen/dp5"
+                    android:textColor="#dc06b1"
+                    android:textSize="8sp"
+                    android:layout_below="@id/textname"
+                    android:fontFamily="cursive"
+                    android:layout_toEndOf="@id/imagecard"
+                    tools:ignore="SmallSp"
+                    tools:targetApi="jelly_bean" />
+
+                <ImageView
+                    style="@style/imageView_WH55"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/dp10"
+                    android:src="@drawable/ic_cake"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/image"
+                    android:layout_alignParentEnd="true" />
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

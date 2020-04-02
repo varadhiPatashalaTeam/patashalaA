@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:background="@drawable/app_background"
+    tools:context="in.varadhismartek.patashalaerp.LoginAndRegistation.LoginScreenActivity">
+
+    <FrameLayout
+        style="@style/Fl_both_match_parent"
+        android:id="@+id/headContainer"/>
+
+</LinearLayout>

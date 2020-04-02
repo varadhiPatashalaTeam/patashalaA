@@ -1,0 +1,12 @@
+<ImageView android:id="@+id/iv"
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:textColor="#000"
+    android:layout_margin="1dp"
+    android:scaleType="fitXY"
+    android:padding="@dimen/dp1"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/border_rect_light"
+    android:fontFamily="sans-serif-condensed"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/cust_tool"
+        style="@style/Toolbar"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout style="@style/Rl_normal">
+
+
+            <ImageView
+                android:id="@+id/iv_backBtn"
+                style="@style/imgvw_normal"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/image"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                style="@style/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toEndOf="@id/iv_backBtn"
+                android:layout_toRightOf="@id/iv_backBtn"
+                android:text="Leave Dashboard"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18" />
+
+            <Spinner
+                android:id="@+id/spUserType"
+                style="@style/spinner"
+                android:layout_width="@dimen/dp150"
+                android:layout_margin="@dimen/dp5"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/dp5"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cust_tool"
+        android:background="@drawable/card_design"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/leavecardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                app:cardCornerRadius="@dimen/dp5"
+                app:cardElevation="@dimen/dp5"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total Leave Accuread"
+                            android:textSize="@dimen/sp14" />
+
+                        <TextView
+                            android:id="@+id/tv_totalCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:text="NA"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ring_shape"
+                            android:drawablePadding="4dp"
+                            android:text="Used Leave"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/tv_usedCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:text="NA"
+                            android:textSize="18sp" />
+
+
+                    </LinearLayout>
+
+                    <in.varadhismartek.patashalaerp.GeneralClass.RingProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="@dimen/dp150"
+                        android:layout_height="@dimen/dp150"
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="@dimen/dp20"
+                        app:ringColor="@color/orange_colorPrimaryDark"
+                        app:ringWidth="@dimen/dp8" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/progressBar"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center"
+                        android:text="" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/lleave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dp5"
+                    android:visibility="gone"
+                    app:cardElevation="@dimen/dp5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp10"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp10"
+                            android:src="@drawable/ic_add_fill" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Apply"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_statement"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp5"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dp5"
+                    app:cardElevation="@dimen/dp5"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/llStaffLeave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="@dimen/dp5"
+                        android:orientation="vertical"
+                        android:background="@drawable/border_rect">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp10"
+                            android:src="@drawable/ic_staff" />
+
+                        <TextView
+                            android:id="@+id/tv_statement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Staff Leave"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_adminList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp5"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="@dimen/dp5"
+                    app:cardElevation="@dimen/dp5">
+
+                    <LinearLayout
+                        android:id="@+id/llStudentLeave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dp5"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dp10"
+                            android:src="@drawable/ic_student" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center|top"
+                            android:text=" Student Leave"
+                            android:textSize="@dimen/sp12" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp5"
+                app:cardCornerRadius="@dimen/dp5"
+                app:cardElevation="@dimen/dp5">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp5"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/noRecords"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=" No Records"
+                    android:textColor="@color/grey"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_fabMain">
+
+            <LinearLayout
+                android:id="@+id/fab1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:background="@null"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="Apply Leave"
+                    android:textColor="@color/black" />
+
+                <android.support.design.widget.FloatingActionButton
+
+                    app:elevation="@dimen/dp6"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:src="@drawable/ic_add"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/fab2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fab1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="60dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="Staff's Request Leave"
+                    android:textColor="@color/black"
+                    />
+
+                <android.support.design.widget.FloatingActionButton
+
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50" />
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fab2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="75dp"
+                android:gravity="right"
+
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="Student's Request Leave"
+                    android:textColor="@color/black" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:src="@drawable/ic_student_a1"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="@dimen/dp50"
+            android:layout_height="@dimen/dp50"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="0dp"
+            android:src="@drawable/ic_add"
+            android:id="@+id/fab_add"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

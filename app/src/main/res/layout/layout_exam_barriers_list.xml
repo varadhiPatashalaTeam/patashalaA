@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/dp5"
+        android:elevation="@dimen/dp8"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/marks_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Exam Type "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_examtype"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Division  "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_division"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Class  "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_class"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Subject  "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Min Marks  "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_min"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Max Marks  "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_max"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp2"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Exam Duration  "
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:textColor="@color/drak_grey"
+                android:textSize="@dimen/sp14" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

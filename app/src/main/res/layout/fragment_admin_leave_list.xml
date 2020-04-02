@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            style="@style/Rl_normal">
+
+            <ImageView
+                style="@style/imgvw_normal"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:id="@+id/iv_backBtn"
+                android:contentDescription="@string/image" />
+
+            <TextView
+                android:layout_width="match_parent"
+                style="@style/tv_normal"
+                android:layout_centerHorizontal="true"
+                android:text="Staff's Leave"
+                android:layout_marginLeft="@dimen/dp10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/iv_backBtn"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_toEndOf="@id/iv_backBtn" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp35"
+        android:background="#f1f3f4"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_margin="@dimen/dp2">
+        <Spinner
+            android:id="@+id/spn_employee"
+            android:layout_width="180dp"
+            android:layout_height="@dimen/dp40"
+            android:text="Inbox"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/spinnerbackground"
+            android:textAlignment="center"
+            android:paddingRight="@dimen/dp20"
+            android:layout_gravity="center|right"
+            android:entries="@array/spStatus"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/dp35"
+        android:background="#f1f3f4"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dp2">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:text="Request"
+            android:paddingLeft="@dimen/dp15"
+            android:gravity="center|left"
+            style="@style/text_big_large"/>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_weight=".4"
+            android:text="Inbox"
+            android:id="@+id/spn_Status"
+            android:background="@drawable/spinnerbackground"
+            android:textAlignment="center"
+            android:layout_gravity="center|right"
+            android:entries="@array/spStatus"
+            android:gravity="center|right"
+            />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp5"
+
+        android:layout_height="match_parent"/>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:layout_margin="@dimen/dp20"
+        android:src="@drawable/ic_add"
+        android:id="@+id/fab"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"/>
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

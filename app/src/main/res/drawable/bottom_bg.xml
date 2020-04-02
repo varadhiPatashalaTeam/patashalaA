@@ -1,0 +1,11 @@
+<selector>
+    <item>
+
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/master_admin" />
+            <corners android:topRightRadius="@dimen/dp15"
+                android:topLeftRadius="@dimen/dp15"/>
+        </shape>
+
+    </item>
+</selector>

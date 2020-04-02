@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_leave_row"
+        android:gravity="center_vertical"
+        android:background="#FDF5F5"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:gravity="center"
+            android:orientation="vertical">
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                android:id="@+id/civ_image"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="60dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:background="@drawable/circle_select"
+                android:layout_margin="@dimen/dp5"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:layout_marginBottom="@dimen/dp2"
+            android:orientation="vertical">
+            <TextView
+                android:fontFamily="@font/nunito_extralight"
+                android:id="@+id/tv_fromDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_margin="@dimen/dp5"
+                android:text="@string/date"/>
+            <TextView
+                android:fontFamily="@font/baumans"
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_weight="1"
+                android:paddingLeft="@dimen/dp5"
+                android:gravity="center|left"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
+            <TextView
+                android:fontFamily="@font/nunito_extralight"
+                android:id="@+id/tv_toDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp2"
+                android:text="FDate -TDate"
+                android:textSize="13sp"
+                android:paddingLeft="@dimen/dp5"
+                android:gravity="center|left"
+                />
+            <TextView
+                android:fontFamily="@font/nunito_extralight"
+                android:id="@+id/tv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_marginTop="@dimen/dp2"
+                android:paddingLeft="@dimen/dp5"
+                android:textSize="@dimen/sp14"
+                android:gravity="center|left"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/dp15"
+                android:gravity="right">
+
+
+                    <ImageView
+                        android:id="@+id/iv_status_circle"
+                        android:layout_width="@dimen/dp10"
+                        android:layout_height="@dimen/dp10"
+                        android:layout_gravity="center"
+                        android:src="@drawable/circle_bg" />
+                    <TextView
+                        android:fontFamily="@font/nunito_extralight"
+                        android:id="@+id/tv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp2"
+                        android:text="status"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/date"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

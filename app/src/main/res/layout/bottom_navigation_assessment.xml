@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_houses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@drawable/image_backgroung"
+            android:gravity="center"
+            android:minHeight="@dimen/dp40"
+            android:text="Add Houses"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/questionBank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dp10"
+            android:layout_weight="1"
+            android:background="@drawable/image_backgroung"
+            android:gravity="center"
+            android:minHeight="@dimen/dp40"
+            android:visibility="visible"
+            android:text="QuestionBank"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<TextView
+android:id="@+id/tv_grade"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="@dimen/dp10"
+android:layout_weight="1"
+android:background="@drawable/image_backgroung"
+android:gravity="center"
+android:minHeight="@dimen/dp40"
+android:text="@string/grade"
+android:textColor="@color/white" />
+<TextView
+android:id="@+id/tv_exam"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_margin="@dimen/dp10"
+android:layout_weight="1"
+android:background="@drawable/image_backgroung"
+android:gravity="center"
+android:minHeight="@dimen/dp40"
+android:text="@string/exam"
+android:textColor="@color/white" />
+<TextView
+android:id="@+id/tv_curricular"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_weight="1"
+android:background="@drawable/image_backgroung"
+android:gravity="center"
+android:text="@string/curricular"
+android:visibility="visible" />
+
+<TextView
+android:id="@+id/tv_Sports"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_weight="1"
+android:background="@color/white"
+android:gravity="center"
+android:text="@string/sports"
+android:visibility="visible" />-->

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_leaveType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="Add Class Teacher"
+        android:fontFamily="@font/baumans"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_popup_staff"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp5"
+        app:cardElevation="@dimen/dp2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Allow Attendance Mark"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp30"
+                        android:padding="@dimen/dp5"
+                        android:text="All"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/btn_round_shape_green"/>
+
+                    <TextView
+                        android:id="@+id/tv_teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp30"
+                        android:padding="@dimen/dp5"
+                        android:text="Class Teacher"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textSize="@dimen/sp12"
+                        android:visibility="gone"
+                        android:background="@drawable/marks_bg"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/tv_save_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:padding="@dimen/dp5"
+                    android:layout_gravity="end"
+                    android:text="Save"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/image_backgroung"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp5"
+                android:text="Add Class Teacher"
+                android:textSize="@dimen/sp16"
+                android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:background="@color/colorLight"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:id="@+id/spn_class"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp10"
+                        android:background="@drawable/spinnerbackground"/>
+
+                    <Spinner
+                        android:id="@+id/spn_section"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_weight="1"
+                        android:layout_margin="@dimen/dp10"
+                        android:background="@drawable/spinnerbackground"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_margin="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border_rect_light">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:padding="@dimen/dp5"
+                        android:background="@drawable/rect_boarder"/>
+
+                    <TextView
+                        android:id="@+id/tv_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:text="Search Teacher..."
+                        android:textColor="@color/hintColor"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/dp5"
+                        android:textSize="@dimen/sp14"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:padding="@dimen/dp5"
+                    android:layout_gravity="center"
+                    android:text="Save"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/image_backgroung"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

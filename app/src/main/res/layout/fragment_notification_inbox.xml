@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Ll_both_match_heading">
+
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/tv_normal"
+        android:id="@+id/fab_button"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add_symbol"
+        android:layout_margin="@dimen/dp25"
+        app:fabSize="auto" />
+
+
+    <LinearLayout
+        style="@style/Ll_both_match_heading"
+        >
+
+        <android.support.v7.widget.Toolbar
+            style="@style/Toolbar"
+            android:background="@color/orange_colorPrimaryDark">
+
+            <RelativeLayout
+                style="@style/Rl_normal">
+
+                <ImageView
+                    style="@style/imgvw_normal"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_arrow_back_white_24dp"
+                    android:id="@+id/img_back"
+                    android:contentDescription="@string/image" />
+
+                <TextView
+                    style="@style/Rl_normal"
+                    android:text="Notification Inbox"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp18"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/img_back"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_toEndOf="@id/img_back" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/card_design">
+
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:background="@drawable/card_design"
+                android:padding="@dimen/dp5">
+
+                <Spinner
+                    android:id="@+id/spn_notification"
+                    style="@style/spinner_weight_1"
+                    android:layout_weight=".55"
+                    android:layout_margin="@dimen/dp2" />
+
+                <Spinner
+                    android:id="@+id/spn_status"
+                    style="@style/spinner_weight_1"
+                    android:layout_weight=".5"
+                    android:layout_margin="@dimen/dp2" />
+
+                <EditText
+                    android:id="@+id/ed_search"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:hint="search by message"
+                    android:textSize="@dimen/sp13"
+                    android:inputType="text"
+                    android:visibility="gone"
+                    android:textAlignment="center"
+                    android:background="@drawable/spinnerbackground_two"
+                    android:layout_weight=".35"/>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                style="@style/Rl_normal"
+                android:background="@drawable/card_design"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp8">
+
+                <android.support.v7.widget.RecyclerView
+                    style="@style/recyclerViewStyle"
+                    android:id="@+id/rv_history" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No have data records"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp22"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/tvNorecords"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

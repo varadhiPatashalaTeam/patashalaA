@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:orientation="vertical"
+    android:background="@color/barrier_green_colorPrimaryDark">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung" />
+
+        <TextView
+            style="@style/tv_normal"
+            android:text="Leave Barrier"
+            android:textSize="@dimen/sp19"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"/>
+
+
+        <ImageView
+            android:id="@+id/iv_next_page"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_gravity="end"
+            android:layout_marginRight="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:layout_marginEnd="@dimen/dp10" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        style="@style/Ll_normal_vtl"
+        android:background="@drawable/card_design">
+
+        <LinearLayout
+            style="@style/Ll_normal_htl"
+            android:layout_marginTop="@dimen/dp5">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="match_parent"
+                style="@style/textinputlaout_weight">
+
+                <EditText
+                    android:id="@+id/et_leave_type"
+                    style="@style/edittext_normal"
+                    android:focusable="true"
+                    android:hint="Leave Type"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/colorBlack"
+                    android:textColorHint="@color/colorBlack"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <ImageButton
+                android:id="@+id/iv_add"
+                android:layout_width="@dimen/dp0"
+                style="@style/imgview_bothmatchcontent"
+                android:layout_weight=".2"
+                android:layout_margin="@dimen/dp10"
+                android:layout_gravity="center"
+                android:background="@color/barrier_green_colorPrimary"
+                android:src="@drawable/ic_add_symbol"
+                tools:ignore="ContentDescription,InefficientWeight" />
+
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycler_view"
+            android:layout_height="@dimen/dp0"
+            android:layout_weight="1"
+            android:padding="@dimen/dp10"
+            android:background="@color/backgroundColor"
+            tools:ignore="InefficientWeight" />
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

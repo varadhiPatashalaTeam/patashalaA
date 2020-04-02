@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:orientation="vertical"
+    tools:context="in.varadhismartek.patashalaerp.LoginAndRegistation.LoginScreenActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/Ll_both_match_heading"
+        android:id="@+id/linearLayoutSelectAudienceScreen"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            style="@style/Rl_normal">
+
+            <ImageView
+                android:id="@+id/patashala_logo"
+                style="@style/imgvw_normal"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/dp60"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/patashala_logo"
+                android:layout_marginTop="@dimen/dp25"
+                android:contentDescription="@string/backgroung" />
+
+            <ImageView
+                android:id="@+id/school_background"
+                style="@style/Image_View"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/school_bckr"
+                android:contentDescription="@string/backgroung" />
+
+            <include layout="@layout/select_audience_layout"/>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

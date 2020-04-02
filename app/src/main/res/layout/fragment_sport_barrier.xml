@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/barrier_green_colorPrimaryDark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="Barrier"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp"
+            android:visibility="gone" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        style="@style/Ll_both_match_heading"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/card_design">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp2"
+            android:elevation="@dimen/dp10"
+            android:background="@drawable/sample_background"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:layout_margin="@dimen/dp0"
+                android:background="@drawable/card_design"
+                android:padding="@dimen/dp5">
+
+                <Spinner
+                    android:id="@+id/spSport"
+                    style="@style/spinner_weight"
+                    android:layout_weight=".6"
+                    android:layout_margin="@dimen/dp2" />
+
+                <EditText
+                    android:id="@+id/ed_playerteam"
+                    android:layout_width="@dimen/pin_min_width"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".4"
+                    android:background="@drawable/spinnerbackground_two"
+                    android:hint="Player per team *"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dp10"
+                    android:textSize="@dimen/sp14"
+                    tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp0"
+                android:background="@drawable/card_design"
+              >
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight=".3"
+                    android:background="@drawable/spinnerbackground_two"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/ed_supportplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinnerbackground_two"
+                        android:hint="Support Player"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:paddingStart="@dimen/dp10"
+                        android:textSize="@dimen/sp12"
+                        tools:ignore="Autofill,RtlSymmetry,TextFields" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight=".3"
+                    android:background="@drawable/spinnerbackground_two"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/ed_mentor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinnerbackground_two"
+                        android:hint="Mentor/Judges"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:paddingStart="@dimen/dp10"
+                        android:textSize="@dimen/sp12"
+                        tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight=".3"
+                    android:background="@drawable/spinnerbackground_two"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/ed_rolename"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinnerbackground_two"
+                        android:hint="Judges Position\n Name "
+                        android:inputType="textCapWords"
+                        android:digits="@string/alphabetic"
+                        android:paddingStart="@dimen/dp10"
+                        android:textSize="@dimen/sp12"
+                        tools:ignore="Autofill,RtlSymmetry,TextFields" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp30"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/dp10" android:layout_marginBottom="@dimen/dp10"
+
+                android:background="@drawable/btn_round_shape_green"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginRight="@dimen/dp5"
+            app:cardCornerRadius="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp45">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp5"/>
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dp10"
+    app:cardElevation="@dimen/dp5"
+    android:layout_margin="@dimen/dp2"
+    android:id="@+id/ll_schedule_row">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_event_image"
+            android:layout_width="85dp"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            android:background="@color/hintColor"
+            android:layout_margin="@dimen/dp4"
+            android:contentDescription="@string/description" />
+
+        <View
+            android:layout_width="@dimen/dp4"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginBottom="@dimen/dp4"
+            android:background="@color/orange_colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dp4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_event_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule_Title"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/sp14"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/tv_event_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textSize="@dimen/sp14"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/division"
+                android:textSize="@dimen/sp14"/>
+
+            <LinearLayout
+                android:id="@+id/date_displayer"
+                style="@style/Ll_normal_htl">
+
+                <LinearLayout
+                    style="@style/Ll_weight_htl">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_fromDate"
+                        style="@style/Rl_normal"
+                        android:background="@drawable/shape4">
+
+                        <TextView
+                            android:id="@+id/tv_fromDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_marginEnd="@dimen/dp30"
+                            android:layout_marginRight="@dimen/dp30"
+                            android:gravity="center"
+                            android:padding="@dimen/dp5"
+                            android:text="@string/from_date" />
+
+                        <ImageView
+                            style="@style/imgvw_normal"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/dp1"
+                            android:background="@drawable/maker_submit"
+                            android:padding="@dimen/dp5"
+                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/description" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/Ll_weight_htl">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_toDate"
+                        style="@style/Rl_normal"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:background="@drawable/shape4"
+                        tools:ignore="RtlHardcoded">
+
+                        <TextView
+                            android:id="@+id/tv_toDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_marginEnd="@dimen/dp30"
+                            android:layout_marginRight="@dimen/dp30"
+                            android:gravity="center"
+                            android:padding="@dimen/dp5"
+                            android:text="@string/to_date" />
+
+                        <ImageView
+                            style="@style/imgvw_normal"
+                            android:layout_height="28dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/dp1"
+                            android:background="@drawable/maker_submit"
+                            android:padding="@dimen/dp5"
+                            android:src="@drawable/ic_date_range_black_24dp"
+                            android:layout_alignParentEnd="true"
+                            tools:ignore="ContentDescription" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp5"
+            android:layout_height="match_parent"
+            android:background="@color/orange_colorPrimary"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

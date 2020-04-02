@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Ll_both_match_heading"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <LinearLayout
+        style="@style/Ll_normal_htl">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutManagement"
+            android:layout_height="match_parent"
+            style="@style/Ll_weight_vtl"
+            android:gravity="center"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                style="@style/imgvw_normal"
+                android:background="@drawable/management_logo"
+                android:padding="@dimen/dp15"
+                android:contentDescription="@string/backgroung" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutTeacher"
+            android:layout_height="match_parent"
+            style="@style/Ll_weight_vtl"
+            android:gravity="center"
+            android:visibility="gone"
+            android:background="?attr/selectableItemBackground"
+            >
+
+
+            <ImageView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                style="@style/imgvw_normal"
+                android:background="@drawable/staff_logo"
+                android:padding="@dimen/dp15"
+                android:contentDescription="@string/backgroung" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutParent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            style="@style/Ll_weight_vtl"
+            android:visibility="gone"
+            android:background="?attr/selectableItemBackground"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                style="@style/imgvw_normal"
+                android:background="@drawable/parent_logo"
+                android:padding="@dimen/dp15"
+                android:contentDescription="@string/backgroung" />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

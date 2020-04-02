@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_event_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/hintColor"
+                android:layout_margin="@dimen/dp4"
+                android:contentDescription="@string/description" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_event_title"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Schedule Title"
+                        android:textSize="@dimen/sp12"
+                        android:fontFamily="@font/baumans"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_scheduleType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Type"
+                        android:fontFamily="@font/nunito_extralight"
+                        android:textSize="11sp"
+                        android:visibility="visible"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="subject"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/division"
+                    android:visibility="gone"
+                    android:textSize="@dimen/sp14"
+                    android:id="@+id/tv_event_type" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/division"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:fontFamily="@font/baumans"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/tv_division"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/division"
+                        android:fontFamily="@font/nunito_extralight"
+                        android:textSize="11sp"
+                        android:layout_weight=".5"/>
+
+                    <TextView
+                        android:id="@+id/tv_class"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Class"
+                        android:paddingEnd="10dp"
+                        android:fontFamily="@font/nunito_extralight"
+                        android:textSize="@dimen/sp12"/>
+
+                    <TextView
+                        android:id="@+id/tv_section"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:fontFamily="@font/nunito_extralight"
+                        android:textSize="11sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/date_displayer"
+                    style="@style/Ll_normal_htl"
+                    android:visibility="gone"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="@dimen/dp5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Exam Date"
+                        android:textSize="@dimen/sp12"
+                        android:fontFamily="@font/baumans"/>
+
+                    <LinearLayout
+                        style="@style/Ll_weight_htl">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_toDate"
+                            style="@style/Rl_normal"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:background="@drawable/shape4"
+                            tools:ignore="RtlHardcoded">
+
+                            <TextView
+                                android:id="@+id/tv_examDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp25"
+                                android:layout_marginEnd="@dimen/dp30"
+                                android:layout_marginRight="@dimen/dp30"
+                                android:gravity="center"
+                                android:fontFamily="@font/nunito_extralight"
+                                android:textSize="@dimen/dp10"
+                                android:padding="@dimen/dp5"
+                                android:text="13/02/2020" />
+
+                            <ImageView
+                                style="@style/imgvw_normal"
+                                android:layout_height="25dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_margin="@dimen/dp1"
+                                android:background="@drawable/maker_submit"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/ic_date_range_black_24dp"
+                                android:layout_alignParentEnd="true"
+                                tools:ignore="ContentDescription" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="@dimen/dp5"
+                android:layout_height="match_parent"
+                android:background="@color/orange_colorPrimaryDark"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F1EFEF"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"/>
+
+
+
+
+
+
+</LinearLayout>

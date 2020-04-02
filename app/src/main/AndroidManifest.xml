@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.varadhismartek.patashalaerp">
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme_orange"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".DashboardModule.PreDashBoardActivity" />
+        <activity android:name=".DashboardModule.TransportModule.TransportLandingActivity" />
+        <activity android:name=".bottomnavigation.BottomNavigationFourActivity" />
+        <activity android:name=".bottomnavigation.BottomNavigationThreeActivity" />
+        <activity android:name=".bottomnavigation.BottomNavigationTwoActivity" />
+        <activity android:name=".bottomnavigation.BottomNavigationOneActivity" />
+        <activity android:name=".DashboardModule.UpdateActivity.UpdateSectionActivity" />
+        <activity android:name=".DashboardModule.TransportModule.TransportActivity" />
+        <activity android:name=".DashboardModule.NotificationModule.NotificationActivity" />
+        <activity android:name=".DashboardModule.House.House_Activity" />
+        <activity android:name=".Timetable.TimeTableMain_Activity" />
+        <activity android:name=".DashboardModule.EmployeeModule.EmployeeActivity" />
+        <activity android:name=".DashboardModule.DashBoardMenuActivity" />
+        <activity android:name=".TeacherModule.TeacherModuleActivity" />
+        <activity android:name=".StudentModule.StudentModuleActivity" />
+        <activity android:name=".DashboardModule.Assessment.ExamActivity" />
+        <activity android:name=".DashboardModule.DashboardSettingActivity" />
+        <activity android:name=".DashboardModule.UpdateActivity.UpdateMakerCheckerActivity" />
+        <activity android:name=".DashboardModule.UpdateActivity.UpdateSelelectModuleActivity" />
+        <activity android:name=".DashboardModule.UpdateActivity.UpdateWingsActivity" />
+        <activity android:name=".DashboardModule.UpdateActivity.UpdateDepartmentActivity" />
+        <activity android:name=".DashboardModule.BarrierSettingActivity" />
+        <activity android:name=".DashboardModule.Syllabus.SyllabusActivity" />
+        <activity android:name=".AddClassTeacher.AddClassTeacherActivity" />
+        <activity android:name=".Birthday.BirthdayActivity" />
+        <activity android:name=".DivisionModule.AddDivisionActivity" />
+        <activity android:name=".LoginAndRegistation.LoginScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginAndRegistation.ForgetResetMpinActivity" />
+        <activity android:name=".LoginAndRegistation.HomeActivity" />
+        <activity
+            android:name=".SelectModules.SelectModuleLandingActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".AddDepartment.AddDepartmentActivity"
+            android:theme="@style/AppTheme_orange" />
+
+        <receiver
+            android:name=".BroadCastReciver.SMSReciver"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="5822">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AddWing.AddWingsActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".AdmissionBarriers.AdmissionBarriersActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".AddRoles.RolesLandingActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.DashboardActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.UpdateActivity.UpdateRolesActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.UpdateActivity.UpdateDivisionActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".CheckerMaker.MakerCheckerActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.UpdateActivity.UpdateStaffBarriersActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.Homework.HomeWorkActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.Assessment.AssessmentModuleActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".GalleryModule.GalleryActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.NoticeBoard.NoticeBoardActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.FeesModule.AddFeeStructure"
+            android:theme="@style/AppTheme_orange" />
+        <activity android:name=".DashboardModule.FeesModule.FeesDetailsActivity" />
+        <activity
+            android:name=".ScheduleModule.ScheduleActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity android:name=".DashboardModule.AttendanceList" />
+        <activity
+            android:name=".DashboardModule.UpdateActivity.UpdateSessionsActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".DashboardModule.UpdateActivity.UpdateClassActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".Visitors.VisitiorsActivity"
+            android:theme="@style/AppTheme_orange" />
+        <activity
+            android:name=".TicketRaise.StaffTicketActivity"
+            android:theme="@style/AppTheme_orange" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

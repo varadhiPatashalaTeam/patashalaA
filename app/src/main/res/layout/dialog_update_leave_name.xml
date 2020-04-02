@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp30">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/white"
+        android:text="Update Leave Name"
+        android:background="@drawable/ic_popup_green"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/dp20">
+
+
+        <TextView
+            android:id="@+id/tv_old_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="Old Leave Name" />
+
+        <EditText
+            android:id="@+id/et_new_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="New Leave Tpye"
+            android:padding="@dimen/dp10" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp35"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:background="@color/barrier_green_colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

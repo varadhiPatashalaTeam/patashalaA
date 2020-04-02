@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+        app:cardCornerRadius="@dimen/dp10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                android:layout_width="@dimen/dp80"
+                android:layout_height="@dimen/dp80"
+                android:src="@drawable/management_logo"
+                android:id="@+id/img_managament_logo"
+                android:layout_margin="@dimen/dp5"/>
+
+            <TextView
+                android:id="@+id/login_tv"
+                style="@style/tv_normal"
+                android:gravity="center"
+                android:layout_toRightOf="@id/img_managament_logo"
+                android:paddingTop="@dimen/dim_twenty"
+                android:text="@string/reset_mpin"
+                android:textColor="#6b6969"
+                android:textStyle="bold"
+                android:textSize="19sp"
+                tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_managament_logo"
+                android:textSize="@dimen/sp13"
+                android:text="@string/enter_old_password"
+                android:id="@+id/tv_verification_code"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:id="@+id/tv_phone_verification"
+                android:layout_below="@id/tv_verification_code">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_margin="@dimen/dp5"
+                            android:padding="@dimen/dp5">
+
+                            <TextView
+                                android:id="@+id/textView_pin1"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:id="@+id/textView_pin2"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:id="@+id/textView_pin3"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:id="@+id/textView_pin4"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.2">
+
+
+                    <ImageView
+                        style="@style/imgvw_normal"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_check_circle_black_24dp"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_phone_verification"
+                android:textSize="@dimen/sp13"
+                android:text="@string/enter_new_password"
+                android:id="@+id/tv_phone_verification_code"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:id="@+id/linear_layout_resetmpin"
+                android:layout_below="@id/tv_phone_verification_code"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_margin="@dimen/dp5"
+                            android:padding="@dimen/dp5">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.2">
+
+                    <ImageView
+                        style="@style/imgvw_normal"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cancel_black_24dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:layout_below="@id/linear_layout_resetmpin"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/spinner_shape"
+                            android:layout_margin="@dimen/dp5"
+                            android:padding="@dimen/dp5">
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+                            <TextView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginLeft="@dimen/margin_pin"
+                                android:layout_marginStart="20dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/non_selected_item" />
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp0"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="0.2">
+
+                    <ImageView
+                        style="@style/imgvw_normal"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_cancel_black_24dp"/>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/fragment_menu_search"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="Search"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom" />
+
+
+
+
+</menu>

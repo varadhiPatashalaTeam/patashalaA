@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="default_preview">
+        <item>#ff670729</item>
+        <item>#ff7a0c2d</item>
+        <item>#ff96092d</item>
+        <item>#ffa10a37</item>
+    </string-array>
+
+
+
+    <string-array name="devlight">
+        <item>#ff540a</item>
+        <item>#f1e461</item>
+        <item>#77a755</item>
+        <item>#ffa10a37</item>
+
+
+    </string-array>
+
+    <array name="tick_below_text_length_5">
+        <item>one</item>
+        <item>two</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+    </array>
+
+    <string-array name="spStatus">
+        <item>Approved</item>
+        <item>Rejected</item>
+    </string-array>
+
+    <string-array name="ModuleNames">
+        <item>Add Staff</item>
+        <item>Add Student</item>
+        <item>Add Subject</item>
+        <item>Add Roles</item>
+        <item>Add Class</item>
+        <item>Assessment</item>
+        <item>Attendance</item>
+        <item>Canteen</item>
+        <item>Leave</item>
+        <item>Payslip</item>
+        <item>Fees</item>
+        <item>Transport</item>
+        <item>Schedule</item>
+        <item>Time Table</item>
+        <item>Maker And Checker</item>
+        <item>Library</item>
+        <item>Performance</item>
+        <item>Homework</item>
+        <item>Ticket Raising</item>
+        <item>Visitors</item>
+        <item>Notification</item>
+        <item>Reminders Alerts</item>
+        <item>Chat</item>
+        <item>Timeline</item>
+        <item>Gallery</item>
+        <item>Newsletters</item>
+    </string-array>
+
+    <string-array name="sub_array">
+        <item>Hindi</item>
+        <item>English</item>
+        <item>Math</item>
+        <item>Computer</item>
+        <item>Social Science</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+    </string-array>
+
+
+
+    <string-array name="WingsName">
+        <item>Teaching</item>
+        <item>Non Teaching</item>
+        <item>General Roles</item>
+        <item>Transportaion</item>
+    </string-array>
+
+    <string-array name="fee_type">
+        <item>Monthly</item>
+        <item>By Monthly</item>
+        <item>Quarterly</item>
+        <item>Half Yearly</item>
+        <item>Yearly</item>
+
+    </string-array>
+
+
+
+</resources>

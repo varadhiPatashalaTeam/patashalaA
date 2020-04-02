@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/cust_tool"
+        layout="@layout/custom_toolbar" />
+
+    <ScrollView
+        android:layout_below="@+id/cust_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_margin="@dimen/dp2"
+                android:layout_marginBottom="@dimen/dp10"
+                android:elevation="@dimen/dp10"
+                app:cardBackgroundColor="@color/trans_gray"
+                app:cardElevation="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".25"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".75"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Visit Date"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp13" />
+
+                            <TextView
+                                android:id="@+id/tv_visitdate"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Visit Time"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp13" />
+
+                            <TextView
+                                android:id="@+id/tv_visitTime"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Visitor ID"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp13" />
+
+                            <TextView
+                                android:id="@+id/tv_visitorId"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Visitor ID"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:elevation="@dimen/dp15"
+                app:cardElevation="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="@dimen/dp5"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".7"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:inputType="text" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:layout_weight=".3"
+                            android:background="@color/green"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@drawable/image_backgroung"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="@color/white"
+                                android:gravity="center"
+                                android:text="F"
+                                android:textColor="@color/green"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp8"
+                            android:paddingLeft="@dimen/sp15"
+                            android:text="Whom to meet"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp15" />
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_marginLeft="@dimen/dp5"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp5"
+                            android:background="@drawable/spinnerbackground" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_margin="@dimen/dp10"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="@dimen/dp5"
+                                android:layout_weight=".5"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:digits="@string/alphanumeric"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="Department Name"
+                                android:inputType="text" />
+
+                            <EditText
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:layout_weight=".5"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:digits="@string/alphanumeric"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:hint="Roles Name"
+                                android:inputType="text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:elevation="@dimen/dp15"
+                android:minHeight="@dimen/dp100"
+                app:cardElevation="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_margin="@dimen/dp5"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@drawable/spinnerbackground_two"
+                        android:hint="enter purpose"
+                        android:paddingLeft="@dimen/dp10" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            style="@style/Ll_normal_htl"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:gravity="center">
+
+                            <com.hbb20.CountryCodePicker
+                                android:id="@+id/ccp"
+                                style="@style/tv_normal"
+                                app:ccp_countryPreference="in"
+                                app:ccp_clickable="false"
+                                android:visibility="visible" />
+
+                            <android.support.design.widget.TextInputLayout
+                                style="@style/textinputlaout_wmatch_hwrap">
+
+                                <EditText
+                                    android:id="@+id/etMobileNo"
+                                    android:hint="@string/mobile_no"
+                                    style="@style/edittext_normal"
+                                    android:textSize="@dimen/sp14"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    tools:ignore="Autofill" />
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinnerbackground_two"
+                            android:gravity="start|top"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:layout_marginBottom="@dimen/dp10"
+                            android:hint="enter address"
+                            android:inputType="textMultiLine"
+                            android:minHeight="@dimen/dp90"
+                            android:padding="@dimen/dp10" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp90"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Signature"
+                            android:gravity="center"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="@dimen/dp120"
+            android:layout_height="@dimen/dp40"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Submit"
+            android:background="@drawable/btn_round_shape_green"/>
+    </LinearLayout>
+
+</RelativeLayout>

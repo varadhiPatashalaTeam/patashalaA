@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Ll_both_match_heading">
+
+    <android.support.design.widget.FloatingActionButton
+        style="@style/tv_normal"
+        android:id="@+id/fab_button"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_add_symbol"
+        android:layout_margin="@dimen/dp25"
+        app:fabSize="auto"/>
+    <View
+        android:layout_width="@dimen/dp10"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        android:background="@color/orange_colorPrimaryDark"/>
+
+    <LinearLayout
+        style="@style/Ll_both_match_heading">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            style="@style/Toolbar"
+            android:background="@drawable/toolbar_syllabus">
+
+            <LinearLayout
+                style="@style/Ll_normal_vtl"
+                android:layout_margin="@dimen/dp5">
+
+                <RelativeLayout
+                    style="@style/Rl_normal">
+
+                    <ImageView
+                        style="@style/imgvw_normal"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_arrow_back_white_24dp"
+                        android:id="@+id/img_back"
+                        android:layout_marginRight="@dimen/dp20"/>
+
+                    <TextView
+                        style="@style/tv_normal"
+                        android:id="@+id/live_camera"
+                        android:text="Syllabus"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp18"
+                        android:layout_toRightOf="@id/img_back"
+                        android:layout_toEndOf="@id/img_back" />
+
+                    <Spinner
+                        style="@style/spinner"
+                        android:id="@+id/sp_ExamType"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="@dimen/dp20"
+                        android:layout_toRightOf="@id/live_camera"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    style="@style/Ll_normal_htl"
+                    android:layout_margin="@dimen/dp5">
+
+                    <Spinner
+                        android:id="@+id/sp_class"
+                        style="@style/spinner_weight" />
+
+                    <Spinner
+                        android:id="@+id/sp_section"
+                        style="@style/spinner_weight" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            style="@style/Ll_both_match_heading"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/dp8">
+
+            <android.support.v7.widget.RecyclerView
+                android:padding="@dimen/dp3"
+                style="@style/Ll_both_match_heading"
+                android:id="@+id/recycler_view"
+                android:background="@color/backgroundColor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

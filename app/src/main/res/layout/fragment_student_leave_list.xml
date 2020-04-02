@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            style="@style/Rl_normal"
+            android:id="@+id/relative">
+
+            <ImageView
+                style="@style/imgvw_normal"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:id="@+id/iv_backBtn"
+                android:contentDescription="@string/image" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                style="@style/tv_normal"
+                android:layout_centerHorizontal="true"
+                android:text="Student's Leave"
+                android:layout_marginLeft="@dimen/dp10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp18"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/iv_backBtn"
+                android:layout_marginStart="@dimen/dp10"
+                android:layout_toEndOf="@id/iv_backBtn" />
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp20"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/sp15"
+        android:paddingRight="@dimen/sp15"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/dp25"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tvname"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/dp25"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvclass"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:minHeight="@dimen/dp25"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvsection"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp5"
+        android:id="@+id/recyclerView"
+        android:padding="@dimen/dp5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" No Records"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:id="@+id/noRecords"/>
+
+    
+
+</LinearLayout>

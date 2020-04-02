@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:orientation="vertical"
+    android:background="@color/barrier_green_colorPrimaryDark">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:src="@drawable/ic_board_games_with_roles"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:text="@string/add_roles"
+            android:textSize="@dimen/sp19"
+            android:layout_gravity="center"
+            android:textColor="@color/colorWhite"/>
+
+
+        <ImageView
+            android:id="@+id/iv_sendAddDept"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        style="@style/Ll_normal_vtl"
+        android:background="@drawable/card_design">
+
+
+
+        <LinearLayout
+            style="@style/Ll_normal_htl"
+            android:background="#f9f2f2"
+            android:padding="@dimen/dp3"
+            android:layout_margin="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_gravity="center">
+
+                <Spinner
+                    style="@style/SpinnerStyleA"
+                    android:id="@+id/spinnerForTypeOfWings"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/spinner_shape"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputLayout
+                    style="@style/textinputlaout_wmatch_hwrap"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginLeft="@dimen/dp5">
+
+                    <EditText
+                        android:id="@+id/edit_enter"
+                        style="@style/textinputlaout_wmatch_hwrap"
+                        android:hint="@string/add_roles"
+                        android:paddingTop="@dimen/dp5"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:layout_height="@dimen/dp45"
+                        android:background="@drawable/bg_edittext"
+                        android:paddingStart="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp5"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlack"
+                        android:textSize="19sp"
+                        tools:ignore="RtlSymmetry"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_gravity="center">
+
+
+                <ImageButton
+                    android:id="@+id/add_image"
+                    style="@style/imgvw_normal"
+                    android:layout_width="@dimen/dp45"
+                    android:layout_gravity="center"
+                    android:background="@color/barrier_green_colorPrimary"
+                    android:src="@drawable/ic_add"
+                    tools:ignore="ContentDescription,InefficientWeight" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            style="@style/recyclerViewStyle"
+            android:layout_height="@dimen/dp0"
+            android:layout_weight="7"
+            android:padding="@dimen/dp10"
+            android:background="@color/backgroundColor"
+            tools:ignore="InefficientWeight" />
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/add_back"
+                android:text="Add"
+                android:textColor="@color/colorWhite"
+                android:textSize="17sp"
+                android:visibility="visible"
+                android:layout_marginTop="5dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+
+
+
+
+        </LinearLayout>-->
+
+        <Button
+            android:id="@+id/button_added"
+            android:layout_width="match_parent"
+            style="@style/button_normal"
+            android:layout_gravity="center"
+            android:background="@drawable/add_back"
+            android:text="@string/add"
+            android:layout_marginStart="@dimen/dp75"
+            android:layout_marginEnd="@dimen/dp75"
+            android:textSize="@dimen/sp17"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/dp5"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

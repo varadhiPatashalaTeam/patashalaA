@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_three_side"
+    android:orientation="horizontal"
+    android:id="@+id/ll_barrier_row">
+
+    <TextView
+        android:id="@+id/tv_leavetype"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:padding="@dimen/dp5"
+        android:text="Leave Type"/>
+
+    <TextView
+        android:id="@+id/tv_leaveCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:padding="@dimen/dp5"
+        android:text="Leave Code"
+        android:background="@drawable/border_left"/>
+
+    <TextView
+        android:id="@+id/tv_leaveNo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:padding="@dimen/dp5"
+        android:background="@drawable/border_left"
+        android:text="Leave Type"/>
+
+    <TextView
+        android:id="@+id/tv_noticePeriod"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/sp12"
+        android:padding="@dimen/dp5"
+        android:background="@drawable/border_left"
+        android:text="Leave Type"/>
+
+    <TextView
+        android:id="@+id/tv_applyTimes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/border_left"
+        android:padding="@dimen/dp5"
+        android:textSize="@dimen/sp12"
+        android:text="Leave Type"/>
+
+</LinearLayout>

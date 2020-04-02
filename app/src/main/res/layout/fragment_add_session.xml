@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/barrier_green_colorPrimaryDark"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        style="@style/Toolbar"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="@string/add_session"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/card_design"
+        android:layout_marginBottom="@dimen/dp50">
+
+        <LinearLayout
+            style="@style/Ll_both_match_heading">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/add_academic_year"
+                        android:textSize="@dimen/sp18"
+                        android:layout_margin="@dimen/dp5"/>
+
+                    <LinearLayout
+                        android:id="@+id/date_displayer"
+                        style="@style/Ll_normal_htl">
+
+                        <LinearLayout
+                            style="@style/Ll_weight_htl"
+                            android:layout_margin="@dimen/dp5">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_fromDate"
+                                style="@style/Rl_normal"
+                                android:background="@drawable/shape4">
+
+                                <TextView
+                                    android:id="@+id/tv_fromDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp35"
+                                    android:layout_marginEnd="@dimen/dp30"
+                                    android:layout_marginRight="@dimen/dp30"
+                                    android:gravity="center"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/from_date" />
+
+                                <ImageView
+                                    style="@style/imgvw_normal"
+                                    android:layout_height="34dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="@dimen/dp1"
+                                    android:background="@drawable/backgroung"
+                                    android:padding="@dimen/dp5"
+                                    android:src="@drawable/ic_date_range_black_24dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:contentDescription="@string/description" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/Ll_weight_htl"
+                            android:layout_margin="@dimen/dp5">
+
+                            <RelativeLayout
+                                android:id="@+id/rl_toDate"
+                                style="@style/Rl_normal"
+                                android:background="@drawable/shape4">
+
+                                <TextView
+                                    android:id="@+id/tv_toDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/dp35"
+                                    android:layout_marginEnd="@dimen/dp30"
+                                    android:layout_marginRight="@dimen/dp30"
+                                    android:gravity="center"
+                                    android:padding="@dimen/dp5"
+                                    android:text="@string/to_date" />
+
+                                <ImageView
+                                    style="@style/imgvw_normal"
+                                    android:layout_height="34dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_margin="@dimen/dp1"
+                                    android:background="@drawable/backgroung"
+                                    android:padding="@dimen/dp5"
+                                    android:src="@drawable/ic_date_range_black_24dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:contentDescription="@string/description" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/bt_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="@string/add"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="@dimen/dp10"
+                        android:background="@drawable/button_shape"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <Spinner
+                style="@style/spinner"
+                android:id="@+id/spinnerForSession"
+                android:layout_width="200dp"
+                android:layout_height="@dimen/dp35"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp16"
+                android:layout_marginStart="@dimen/dp60"
+                android:layout_marginEnd="@dimen/dp60"/>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardElevation="@dimen/dp5"
+                android:background="@color/barrier_green_colorPrimaryDark"
+                android:layout_margin="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_showHide"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp30"
+                        android:background="@drawable/account_background_shape"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tvSessionName"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/session_1"
+                            android:layout_marginLeft="@dimen/dp20"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/dp20" />
+
+                        <ImageView
+                            android:id="@+id/iv_down"
+                            android:layout_width="20dp"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@drawable/ic_keyboard_arrow_down"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:visibility="visible"
+                            android:layout_marginEnd="@dimen/dp10"
+                            android:contentDescription="@string/description" />
+
+                        <ImageView
+                            android:id="@+id/iv_up"
+                            android:layout_width="20dp"
+                            android:layout_height="@dimen/dp20"
+                            android:src="@drawable/ic_keyboard_arrow_up"
+                            android:layout_marginRight="@dimen/dp10"
+                            android:visibility="gone"
+                            android:layout_marginEnd="@dimen/dp10"
+                            android:contentDescription="@string/description" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_NoOfSession"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_margin="@dimen/dp5">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/dp35"
+                                android:layout_weight=".7"
+                                android:text="Weekly Working Day"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp10"/>
+                            <EditText
+                                android:id="@+id/workday"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/dp35"
+                                android:layout_weight=".3"
+                                android:background="@drawable/bg_edittext"
+                                android:hint="@string/_1"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:maxLength="1"
+                                android:textColor="@color/light_grey"
+                                android:paddingLeft="@dimen/dp10"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_gravity="center"
+                            style="@style/Ll_normal_htl"
+                            android:gravity="center_vertical"
+                            android:layout_margin="@dimen/dp5">
+
+                            <TextView
+                                style="@style/tv_weight_normal"
+                                android:layout_gravity="center"
+                                android:hint="@string/no_of_sessions"
+                                android:padding="@dimen/dp5"
+                                android:textColorHint="@color/hintColor" />
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_incrementing_child_perTeaching1"
+                                style="@style/linearlayout_wwrap_hwrp_gc"
+                                android:layout_margin="@dimen/dp5">
+
+                                <TextView
+                                    android:id="@+id/tv_minus"
+                                    style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                                    android:text="@string/dash"
+                                    android:textSize="@dimen/sp20" />
+
+                                <TextView
+                                    android:id="@+id/tv_noSession"
+                                    style="@style/txtviw_15dp_h28dp_wgt1_gc"
+                                    android:text="@string/_1" />
+
+                                <TextView
+                                    android:id="@+id/tv_plus"
+                                    style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                                    android:text="@string/plus"
+                                    android:textSize="@dimen/sp18" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp35"
+            android:background="@drawable/button_shape"
+            android:text="@string/submit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

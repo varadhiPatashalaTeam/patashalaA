@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_both_match_heading"
+    android:background="@color/barrier_green_colorPrimaryDark">
+
+
+    <android.support.v7.widget.Toolbar style="@style/Toolbar">
+
+        <ImageView
+            android:id="@+id/iv_backBtn"
+            style="@style/imgvw_normal"
+            android:layout_gravity="start"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_arrow_back_white_24dp" />
+
+
+        <TextView
+            style="@style/tv_normal"
+            android:layout_gravity="center"
+            android:text="@string/barrier"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp19" />
+
+
+        <ImageView
+            android:id="@+id/btnNext"
+            style="@style/imgvw_normal"
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dp10"
+            android:contentDescription="@string/backgroung"
+            android:src="@drawable/ic_send_black_24dp" />
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        style="@style/scrollView"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            style="@style/Ll_both_match_heading"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/dp100"
+                android:layout_height="@dimen/dp100"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/ic_managment"
+                android:contentDescription="@string/logo" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        style="@style/Ll_both_match_heading"
+                        android:layout_marginTop="5dp">
+
+                        <android.support.design.widget.TextInputLayout style="@style/textinputlaout_wmatch_hwrap">
+
+                            <EditText
+                                android:id="@+id/editText_staffnumber"
+                                style="@style/edittext_normal"
+                                android:layout_gravity="center"
+                                android:hint="@string/staff_number"
+                                android:inputType="textCapCharacters"
+                                tools:ignore="TextFields" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <android.support.design.widget.TextInputLayout style="@style/textinputlaout_wmatch_hwrap">
+
+                            <EditText
+                                android:id="@+id/editText_admissionNumber"
+                                style="@style/edittext_normal"
+                                android:layout_gravity="center"
+                                android:hint="@string/admission_number"
+                                android:inputType="textCapCharacters"
+                                tools:ignore="TextFields" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        style="@style/Ll_normal_vtl"
+                        android:visibility="visible">
+
+                        <android.support.design.widget.TextInputLayout style="@style/textinputlaout_wmatch_hwrap">
+
+                            <EditText
+                                android:id="@+id/editText_percentage_for_admission"
+                                style="@style/edittext_normal"
+                                android:layout_gravity="center"
+                                android:hint="@string/enter_minimum_required_for_admission"
+                                android:inputType="numberDecimal|numberDecimal"
+                                android:maxLength="5" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <TextView
+                            style="@style/tv_bothmatch"
+                            android:background="@drawable/account_background_shape"
+                            android:gravity="center"
+                            android:padding="@dimen/dp3"
+                            android:text="@string/qualification"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp17" />
+
+                        <LinearLayout style="@style/Ll_normal_htl">
+
+
+                            <TextView
+                                style="@style/tv_weight_normal"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dp5"
+                                android:text="@string/father_qualification" />
+
+                            <Spinner
+                                android:id="@+id/spinnerCustomForFather"
+                                style="@style/spinner_weight" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/Ll_normal_htl">
+
+
+                            <TextView
+                                style="@style/tv_weight_normal"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dp5"
+                                android:text="@string/mother_qualification" />
+
+                            <Spinner
+                                android:id="@+id/spinnerCustomForMother"
+                                style="@style/spinner_weight" />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            style="@style/tv_bothmatch"
+                            android:background="@drawable/account_background_shape"
+                            android:gravity="center"
+                            android:padding="@dimen/dp3"
+                            android:text="@string/facility_provident"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp17" />
+
+                        <LinearLayout style="@style/Ll_normal_htl">
+
+                            <TextView
+                                style="@style/tv_weight_normal"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dp5"
+                                android:text="@string/food_facility" />
+
+                            <ToggleButton
+                                android:id="@+id/toggle_food_facility"
+                                style="@style/tv_normal"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/dp5"
+                                android:layout_marginEnd="@dimen/dp11"
+                                android:background="@drawable/ic_name1_toggle_bg"
+                                android:clickable="true"
+                                android:textOff=""
+                                android:textOn=""
+                                tools:ignore="ObsoleteLayoutParam" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout style="@style/Ll_normal_htl">
+
+                            <TextView
+                                style="@style/tv_weight_normal"
+                                android:layout_gravity="center"
+                                android:layout_margin="@dimen/dp5"
+                                android:text="@string/transport_facility" />
+
+                            <ToggleButton
+                                android:id="@+id/toggle_transport_facility"
+                                style="@style/tv_normal"
+                                android:layout_height="40dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="5dp"
+                                android:layout_marginEnd="11dp"
+                                android:background="@drawable/ic_name1_toggle_bg"
+                                android:clickable="true"
+                                android:textOff=""
+                                android:textOn=""
+                                tools:ignore="ObsoleteLayoutParam" />
+
+
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.CardView
+                            style="@style/cardViewStyle"
+                            android:layout_margin="@dimen/dp5"
+                            app:cardCornerRadius="@dimen/dp5">
+
+                            <LinearLayout
+                                style="@style/Ll_normal_htl"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="5dp">
+
+                                <TextView
+                                    style="@style/tv_weight_normal"
+                                    android:layout_gravity="center"
+                                    android:hint="@string/guardians"
+                                    android:textColorHint="@color/hintColor"
+                                    android:textSize="@dimen/sp17" />
+
+
+                                <LinearLayout
+                                    android:id="@+id/ll_incrementing_child_perTeaching1"
+                                    style="@style/linearlayout_wwrap_hwrp_gc"
+                                    android:layout_margin="@dimen/dp5">
+
+                                    <TextView
+                                        android:id="@+id/button_decrease_count"
+                                        style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                                        android:text="@string/minus"
+                                        android:textSize="@dimen/sp20" />
+
+                                    <TextView
+                                        android:id="@+id/numberOfGuardians"
+                                        style="@style/txtviw_15dp_h28dp_wgt1_gc"
+                                        android:text="@string/_1" />
+
+                                    <TextView
+                                        android:id="@+id/button_increase_count"
+                                        style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                                        android:text="@string/plus"
+                                        android:textSize="@dimen/sp18" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </android.support.v7.widget.CardView>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="@dimen/dp100"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/dp15"
+                        android:background="@drawable/button_shape"
+                        android:minHeight="@dimen/dp40"
+                        android:text="Save"
+
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+            </ScrollView>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp5"
+    android:background="@color/marksRowColor"
+    android:id="@+id/ll_gradeRow">
+
+    <TextView
+        android:id="@+id/tv_grade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dp10"
+        android:text="@string/a_plus_plus"
+        android:layout_marginStart="@dimen/dp10" />
+
+    <TextView
+        android:id="@+id/tv_minMarks"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/grade1"
+        android:background="@drawable/marks_bg"
+        android:padding="@dimen/dp10"/>
+
+    <TextView
+        android:id="@+id/tv_maxMarks"
+        android:layout_width="@dimen/dp60"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/grade1"
+        android:padding="@dimen/dp10"
+        android:background="@drawable/marks_bg"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginLeft="@dimen/dp10"/>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp5"
+
+        android:background="@drawable/boarder_table"
+        android:elevation="@dimen/dp4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".2"
+            android:elevation="@dimen/dp0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                android:id="@+id/civEmpImage"
+                android:layout_width="@dimen/dp60"
+                android:layout_height="@dimen/dp60"
+                android:background="@drawable/ic_account"
+                android:src="@drawable/circle_select" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".8"
+            android:elevation="@dimen/dp8"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dp8"
+            android:paddingRight="@dimen/dp8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/dp25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:gravity="center|left"
+                    android:minHeight="@dimen/dp25"
+                    android:text="student name" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tvStatus"
+                    android:layout_width="0dp"
+                    android:layout_weight=".3"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:minHeight="@dimen/dp25"
+                    android:text="" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/dp25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:gravity="center|left"
+                    android:text="class" />
+
+                <TextView
+                    android:id="@+id/tv_section"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:gravity="center|left"
+                    android:text="section" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:minHeight="@dimen/dp25"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dob"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:gravity="center|left"
+                    android:text="DOB" />
+
+                <TextView
+                    android:id="@+id/tv_certificateno"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:gravity="center|left"
+                    android:text="strCertificateNo" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

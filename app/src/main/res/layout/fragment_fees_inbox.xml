@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark">
+
+    <android.support.v7.widget.Toolbar
+        style="@style/Toolbar"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            style="@style/Rl_normal">
+
+            <ImageView
+                android:id="@+id/iv_backBtn"
+                style="@style/imgvw_normal"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:contentDescription="@string/image" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/sp18"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp0"
+                android:textColor="@color/white"
+                android:text="Student Fees"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dp30" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/card_design">
+
+        <LinearLayout
+            style="@style/Ll_normal_vtl">
+
+            <LinearLayout
+                style="@style/Ll_normal_htl"
+                android:id="@+id/ll_paymentdetails"
+                android:background="@color/white">
+
+                <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                    android:id="@+id/civ_image"
+                    android:layout_width="@dimen/dp75"
+                    android:layout_height="@dimen/dp75"
+                    android:layout_margin="@dimen/dp10"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/dp4"
+                    android:elevation="@dimen/dp5"
+                    android:src="@drawable/circle_solid_green"
+                    android:background="@drawable/circle_select" />
+
+                <LinearLayout android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl"
+                        android:layout_marginTop="@dimen/dp8">
+
+                        <TextView
+                            style="@style/tv_weight_normal"
+                            android:text="@string/name"
+                            android:textStyle="bold"
+                            android:layout_weight="0.5" />
+
+                        <TextView
+                            android:id="@+id/tv_student_name"
+                            style="@style/tv_weight_normal"
+                            android:layout_weight="1.5" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/Ll_normal_htl">
+
+                        <TextView
+                            style="@style/tv_weight_normal"
+                            android:text="@string/Class"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_student_class"
+                            style="@style/tv_weight_normal"
+                            android:gravity="left"
+                            android:padding="@dimen/dp3"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            style="@style/tv_weight_normal"
+                            android:layout_gravity="center"
+                            android:text="@string/sections"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tv_student_section"
+                            style="@style/tv_weight_normal"
+                            android:gravity="center"
+                            android:padding="@dimen/dp3"
+                            tools:ignore="RtlHardcoded" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/dp5">
+
+                        <TextView
+                            android:text="Academic Year"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginRight="@dimen/dp10"/>
+
+                        <Spinner
+                            android:id="@+id/spn_academic"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/dp30"
+                            android:background="@drawable/spinnerbackground"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_row"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="@dimen/dp35"
+                android:text="Month"
+                android:gravity="center"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_pendingFee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Pending Fee"
+                android:textColor="@color/white"
+                android:padding="@dimen/dp2"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Fee"
+                android:padding="@dimen/dp2"
+                android:textColor="@color/white"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:layout_marginRight="@dimen/dp5"
+                android:src="@drawable/ic_keyboard_arrow_down"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            style="@style/recyclerViewStyle"
+            android:layout_gravity="center"
+            android:id="@+id/recycler_view"/>
+
+    </LinearLayout>
+
+</LinearLayout>

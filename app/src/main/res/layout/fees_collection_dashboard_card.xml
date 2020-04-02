@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView style="@style/cardViewStyle"
+    android:layout_height="@dimen/dp185"
+    android:layout_margin="@dimen/dp5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout style="@style/linearLayout_Normal_Vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/baumans"
+                style="@style/textView_W0HM"
+                android:layout_weight=".7"
+                android:gravity="center|left"
+                android:paddingLeft="@dimen/dp8"
+                android:text="Fees Status"
+                android:textSize="12sp" />
+
+
+
+            <LinearLayout
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp20"
+                    android:layout_height="@dimen/dp20"
+                    android:src="@drawable/ic_sync_black_24dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAttendance"
+                style="@style/linearLayout_W0HM"
+                android:layout_weight=".1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_arrow_right" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            style="@style/view_horizantal_H1WM"
+            android:background="@color/backgroundColor2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <LinearLayout
+                android:id="@+id/ll_pieChartFees"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Today's Collection"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/nunito_extralight"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp150"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:layout_margin="@dimen/dp5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTotalFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Fees"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:fontFamily="@font/nunito_extralight"/>
+
+                <TextView
+                    android:id="@+id/tvCollectedFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collected Fees"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:fontFamily="@font/nunito_extralight"/>
+
+
+                <TextView
+                    android:id="@+id/tvPendingFees"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pending Fees"
+                    android:textSize="14sp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:fontFamily="@font/nunito_extralight"/>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

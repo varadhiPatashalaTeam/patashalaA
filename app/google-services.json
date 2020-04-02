@@ -1,0 +1,288 @@
+{
+  "project_info": {
+    "project_number": "738074916809",
+    "firebase_url": "https://patashalaerp-4148d.firebaseio.com",
+    "project_id": "patashalaerp-4148d",
+    "storage_bucket": "patashalaerp-4148d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738074916809:android:7c3bf2b43ec9aced",
+        "android_client_info": {
+          "package_name": "com.empassist.varadhi.pragathi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LqhIsc94YYX2rK-xx2eZe6LyLxqjUtI"
+        },
+        {
+          "current_key": "AIzaSyB7__2OF2w8cYYsXwvnurSm_ybTSrOJq00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738074916809:android:6931a3e4569aa6db",
+        "android_client_info": {
+          "package_name": "com.example.varadhi.addstaff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738074916809-2p5opsa9su0g4hba7n2ehq8jmaio8lvc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.varadhi.addstaff",
+            "certificate_hash": "9d2b1c47b8c0aa70c26386a3c29dce756b0d7af2"
+          }
+        },
+        {
+          "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LqhIsc94YYX2rK-xx2eZe6LyLxqjUtI"
+        },
+        {
+          "current_key": "AIzaSyB7__2OF2w8cYYsXwvnurSm_ybTSrOJq00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738074916809:android:37f680609e107347",
+        "android_client_info": {
+          "package_name": "com.varadhismartek.collegemanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738074916809-il2thn7uh8t9tmcdfp5nejuo75u37n8a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.varadhismartek.collegemanagement",
+            "certificate_hash": "9d2b1c47b8c0aa70c26386a3c29dce756b0d7af2"
+          }
+        },
+        {
+          "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LqhIsc94YYX2rK-xx2eZe6LyLxqjUtI"
+        },
+        {
+          "current_key": "AIzaSyB7__2OF2w8cYYsXwvnurSm_ybTSrOJq00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738074916809:android:086ae08fdf7e87b4",
+        "android_client_info": {
+          "package_name": "in.varadhismartek.patashalaerp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738074916809-cj2u2tir8msh8te4pu1ue5hqmi4k0pfm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.varadhismartek.patashalaerp",
+            "certificate_hash": "9d2b1c47b8c0aa70c26386a3c29dce756b0d7af2"
+          }
+        },
+        {
+          "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LqhIsc94YYX2rK-xx2eZe6LyLxqjUtI"
+        },
+        {
+          "current_key": "AIzaSyB7__2OF2w8cYYsXwvnurSm_ybTSrOJq00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738074916809:android:1125a7c8ee64c49d",
+        "android_client_info": {
+          "package_name": "in.varadhismartek.pathshalaerp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738074916809-c4cqu9rn5odofkfc2nmouimeoetrl6bo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.varadhismartek.pathshalaerp",
+            "certificate_hash": "9d2b1c47b8c0aa70c26386a3c29dce756b0d7af2"
+          }
+        },
+        {
+          "client_id": "738074916809-p8ns90fq6id281i816f67mjt1e59d2gu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.varadhismartek.pathshalaerp",
+            "certificate_hash": "e3b36f420c3ba9c4833d2390a5c0bd8d12188c71"
+          }
+        },
+        {
+          "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LqhIsc94YYX2rK-xx2eZe6LyLxqjUtI"
+        },
+        {
+          "current_key": "AIzaSyB7__2OF2w8cYYsXwvnurSm_ybTSrOJq00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738074916809:android:ed862529c4fa5121",
+        "android_client_info": {
+          "package_name": "in.varadhismartek.vslogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738074916809-tm8f8mdnkc33rnvvr6ka0vuiabij6rr1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.varadhismartek.vslogin",
+            "certificate_hash": "9d2b1c47b8c0aa70c26386a3c29dce756b0d7af2"
+          }
+        },
+        {
+          "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5LqhIsc94YYX2rK-xx2eZe6LyLxqjUtI"
+        },
+        {
+          "current_key": "AIzaSyB7__2OF2w8cYYsXwvnurSm_ybTSrOJq00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738074916809-4ovmqhba0ku5vu3hff6lippkecginio6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

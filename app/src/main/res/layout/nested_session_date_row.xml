@@ -1,0 +1,75 @@
+<LinearLayout
+    android:id="@+id/date_display"
+    android:layout_margin="@dimen/dp5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Ll_normal_htl">
+
+    <LinearLayout
+        style="@style/Ll_weight_htl"
+        android:layout_margin="@dimen/dp5">
+
+        <RelativeLayout
+            android:id="@+id/rl_fromDate"
+            style="@style/Rl_normal"
+            android:background="@drawable/shape4">
+
+            <TextView
+                android:id="@+id/tv_fromDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="@string/from_date" />
+
+            <ImageView
+                style="@style/imgvw_normal"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp1"
+                android:background="@drawable/backgroung"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/description" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/Ll_weight_htl"
+        android:layout_margin="@dimen/dp5">
+
+        <RelativeLayout
+            android:id="@+id/rl_toDate"
+            style="@style/Rl_normal"
+            android:background="@drawable/shape4">
+
+            <TextView
+                android:id="@+id/tv_toDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:layout_marginEnd="@dimen/dp30"
+                android:layout_marginRight="@dimen/dp30"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="@string/to_date" />
+
+            <ImageView
+                style="@style/imgvw_normal"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp1"
+                android:background="@drawable/backgroung"
+                android:padding="@dimen/dp5"
+                android:src="@drawable/ic_date_range_black_24dp"
+                android:layout_alignParentEnd="true"
+                android:contentDescription="@string/description" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

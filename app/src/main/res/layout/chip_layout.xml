@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_normal_htl"
+    android:background="@drawable/border_rect"
+    android:paddingTop="@dimen/dp5"
+    android:paddingBottom="@dimen/dp5"
+    android:gravity="center"
+    android:id="@+id/linear"
+    android:layout_margin="@dimen/dp5"
+    android:orientation="horizontal"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/dp0"
+        style="@style/Ll_normal_htl"
+        android:layout_weight="9.5">
+
+        <TextView
+            android:id="@+id/chip_txt"
+            style="@style/tv_bothmatch"
+            android:text="@string/account"
+            android:textSize="@dimen/sp13"
+            tools:ignore="RtlSymmetry"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp15"
+        android:layout_weight="1.5"
+        style="@style/Ll_weight_htl"
+        android:gravity="center|end">
+
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/imgview_bothmatchcontent"
+            android:background="@drawable/close_back"
+            android:layout_marginLeft="@dimen/dp5"
+            android:src="@drawable/close_white"
+            android:contentDescription="@null"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

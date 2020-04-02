@@ -1,0 +1,274 @@
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp20"
+        app:cardCornerRadius="@dimen/dp10"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/dp5"
+                android:padding="@dimen/dp5"
+                android:background="@drawable/border_rect">
+
+                <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+                    android:id="@+id/civ_visitorPic"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="@dimen/dp2"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/circle_solid_green"
+                    android:background="@drawable/circle_solid_green"/>
+
+
+                <TextView
+                    android:id="@+id/tv_visitorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Abhishek"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/sp18"
+                    android:textColor="@color/orange_colorPrimaryDark"/>
+
+                <TextView
+                    android:id="@+id/tv_visitorId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id"
+                    android:textStyle="italic"
+                    android:textSize="@dimen/sp14"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Gender"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Male"
+                        android:gravity="end"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/dp2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/mobile_no"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/mobile_no"
+                        android:gravity="end"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/dp2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Whom To Meet"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_whomToMeet"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/dp2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Added By"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_addedBy"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/dp2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Address"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp12"
+                        android:gravity="end"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/dp2">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Entry Date"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Entry Time"
+                        android:gravity="center"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/orange_colorPrimaryDark"
+                    android:padding="@dimen/dp5">
+
+                    <TextView
+                        android:id="@+id/tv_entryDate"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="Entry Date"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_entryTime"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/entry_time"
+                        android:textSize="@dimen/sp12"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/dotedlines"
+                style="@style/Rl_normal"
+                android:layout_marginTop="@dimen/dp10">
+
+                <ImageView
+                    android:id="@+id/imagevwleft"
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp25"
+                    android:src="@drawable/halfroundshaperightside"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/viewdotedline"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_toEndOf="@id/imagevwleft"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layerType="software"
+                    android:layout_toStartOf="@id/imagevwright"
+                    android:background="@drawable/dotedline"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/imagevwright"
+                    android:layout_width="@dimen/dp15"
+                    android:layout_height="@dimen/dp25"
+                    android:layout_gravity="right"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/halfroundshape"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_qrCode"
+                    android:layout_width="@dimen/dp150"
+                    android:layout_height="@dimen/dp150"
+                    android:layout_margin="@dimen/dp5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/linearLayout_Normal_Vertical"
+    tools:ignore="RtlHardcoded,RtlSymmetry,SmallSp,ContentDescription,NestedWeights,HardcodedText,UselessParent,UseCompoundDrawables,DisableBaselineAlignment,UnusedAttribute,InefficientWeight">
+
+    <android.support.v7.widget.CardView
+        style="@style/cardViewStyle"
+        android:layout_margin="@dimen/dp5">
+
+
+        <LinearLayout
+            style="@style/linearLayout_Normal_Vertical"
+            android:layout_margin="@dimen/dp5">
+
+            <TextView
+                style="@style/tv_normal"
+                android:padding="@dimen/dp5"
+                android:text="@string/graph"
+                android:textSize="@dimen/sp12"
+                android:textColor="@color/textcolor" />
+
+            <View
+                style="@style/view_horizantal_H1WM"
+                android:background="@color/backgroundColor" />
+
+            <LinearLayout style="@style/linearLayout_Normal_Vertical">
+
+                <LinearLayout style="@style/Ll_both_match_heading">
+
+                  <!--  <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/graph_view"
+                        android:layout_width="@dimen/dp185"
+                        android:layout_height="@dimen/dp185"
+                        android:layout_gravity="center" />-->
+                </LinearLayout>
+
+                <LinearLayout style="@style/linearLayout_Normal_Vertical">
+
+                    <LinearLayout
+                        style="@style/linearLayout_Normal_Vertical"
+                        android:layout_marginLeft="@dimen/dp15"
+                        android:layout_marginRight="@dimen/dp15"
+                        android:layout_marginBottom="@dimen/dp0"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            style="@style/linearLayout_H_wrap"
+                            android:gravity="center|left">
+
+                            <TextView
+                                style="@style/textView_W0HW"
+                                android:layout_weight=".4"
+                                android:drawableLeft="@drawable/ic_dot"
+                                android:drawablePadding="@dimen/dp10"
+                                android:drawableTint="@color/green"
+                                android:gravity="center|left"
+                                android:text="@string/Total_Visitors"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_totalvisitor"
+                                style="@style/textView_W0HW"
+                                android:layout_weight=".6"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="@string/_5000"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linearLayout_H_wrap"
+                            android:gravity="center|left">
+
+                            <TextView
+                                style="@style/textView_W0HW"
+                                android:layout_weight=".4"
+                                android:drawableLeft="@drawable/ic_dot"
+                                android:drawablePadding="@dimen/dp10"
+                                android:drawableTint="@color/orange"
+                                android:gravity="center|left"
+                                android:text="@string/total_existing"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_totalexixsting"
+                                style="@style/textView_W0HW"
+                                android:layout_weight=".6"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="@string/_5000"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/linearLayout_H_wrap"
+                            android:gravity="center|left">
+
+                            <TextView
+                                style="@style/textView_W0HW"
+                                android:layout_weight=".4"
+                                android:drawableLeft="@drawable/ic_dot"
+                                android:drawablePadding="@dimen/dp10"
+                                android:drawableTint="@color/green"
+                                android:gravity="center|left"
+                                android:text="@string/Todays"
+
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+
+                            <TextView
+                                android:id="@+id/tv_todays"
+                             style="@style/textView_W0HW"
+                                android:layout_weight=".6"
+                                android:gravity="center|left"
+                                android:paddingLeft="@dimen/dp15"
+                                android:text="@string/_5000"
+                                android:textColor="@color/black"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

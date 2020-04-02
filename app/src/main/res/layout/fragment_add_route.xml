@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/iv_backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="0dp"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text=" Add Routes"
+                tools:ignore="RelativeOverlap" />
+
+            <TextView
+                android:id="@+id/tvTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="10dp"
+                android:layout_marginRight="@dimen/dp20"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp5"
+                android:elevation="@dimen/dp8"
+                app:cardElevation="@dimen/dp8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ed_RouteNo"
+                        android:layout_width="0dp"
+                        android:layout_weight=".6"
+                        android:textSize="@dimen/sp13"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_margin="@dimen/dp8"
+                        android:focusableInTouchMode="true"
+                        android:background="@drawable/spinnerbackground_two"
+                        android:hint="Enter Route Number"
+                        android:layout_marginRight="@dimen/dp2"
+                        android:inputType="number"
+                        android:maxLength="5"
+                        android:paddingLeft="@dimen/dp10" />
+                    <Spinner
+                        android:id="@+id/sp_BusList"
+                        android:layout_width="@dimen/dp0"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_weight=".4"
+                    android:layout_marginLeft="@dimen/dp2"
+                        android:layout_gravity="center"
+                        android:background="@drawable/spinnerbackground"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/dp35"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_VehicleName"
+                        android:layout_width="@dimen/dp0"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="center|left"
+                        android:paddingLeft="@dimen/sp15"
+                        android:background="@drawable/border_three_side"
+                        android:layout_margin="@dimen/dp5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp15" />
+
+                    <TextView
+                        android:id="@+id/tv_VehicleSeat"
+                        android:layout_width="@dimen/dp0"
+                        android:background="@drawable/border_three_side"
+                        android:paddingLeft="@dimen/sp15"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:gravity="center|left"
+                        android:layout_margin="@dimen/dp5"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp15" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/dp35"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/tv_VehicleRegNo"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center|left"
+                            android:paddingLeft="@dimen/sp15"
+                            android:background="@drawable/border_three_side"
+                            android:layout_margin="@dimen/dp5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp15" />
+
+                        <TextView
+                            android:id="@+id/tv_VehicleID"
+                            android:layout_width="@dimen/dp0"
+                            android:background="@drawable/border_three_side"
+                            android:paddingLeft="@dimen/sp15"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".5"
+                            android:gravity="center|left"
+                            android:layout_margin="@dimen/dp5"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp15" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:elevation="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardElevation="@dimen/dp5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:hint="vehicle start point from school"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp15" />
+
+                                <TextView
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".4"
+                                    android:gravity="center"
+                                    android:hint="Start Time"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:layout_weight=".6"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/ed_startSchoolPoint"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/spinnerbackground_two"
+                                        android:hint="vehicle start point from school"
+                                        android:inputType="textCapSentences|text"
+                                        android:maxLength="40"
+                                        android:focusableInTouchMode="true"
+                                        android:paddingLeft="@dimen/dp5"
+                                        android:textSize="@dimen/sp13" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:layout_weight=".4"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/ed_SchoolTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_weight=".5"
+                                        android:background="@drawable/spinnerbackground_two"
+                                        android:focusable="false"
+                                        android:gravity="center"
+                                        android:hint="00:00"
+                                        android:inputType="numberDecimal"
+                                        android:paddingLeft="@dimen/dp10"
+                                        android:textSize="@dimen/sp15" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp8"
+                        android:elevation="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardElevation="@dimen/dp5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp5"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".6"
+                                    android:hint="vehicle start point from home"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp15" />
+
+                                <TextView
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight=".4"
+                                    android:gravity="center"
+                                    android:hint="Start Time"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp15" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp50"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:layout_weight=".6"
+                                    android:orientation="horizontal">
+
+                                    <EditText
+                                        android:id="@+id/ed_startHomePoint"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/spinnerbackground_two"
+                                        android:hint="Vehicle start point from home"
+                                        android:inputType="textCapSentences|text"
+                                        android:maxLength="40"
+                                        android:focusableInTouchMode="true"
+                                        android:paddingLeft="@dimen/dp5"
+                                        android:textSize="@dimen/sp13" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:layout_weight=".4"
+                                    android:orientation="horizontal">
+                                    <EditText
+                                        android:id="@+id/ed_HomeTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginLeft="2dp"
+                                        android:layout_weight=".5"
+                                        android:focusable="false"
+                                        android:background="@drawable/spinnerbackground_two"
+                                        android:gravity="center"
+                                        android:hint="00:00"
+                                        android:inputType="numberDecimal"
+                                        android:paddingLeft="@dimen/dp10"
+                                        android:textSize="@dimen/sp15" />
+
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:elevation="@dimen/dp5"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardElevation="@dimen/dp5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp45"
+
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".5"
+                                android:gravity="center|left"
+                                android:hint="Number of Stop"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp15" />
+
+                            <LinearLayout
+                                android:id="@+id/ll_incrementing_child_perTeaching1"
+                                style="@style/linearlayout_wwrap_hwrp_gc"
+                                android:layout_marginLeft="@dimen/dp20"
+                                tools:ignore="RtlHardcoded,UnusedAttribute">
+
+                                <TextView
+                                    android:id="@+id/tv_Minus"
+                                    style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                                    android:text="@string/dash" />
+
+
+                                <TextView
+                                    android:id="@+id/ed_NoStop"
+                                    style="@style/txtviw_15dp_h28dp_wgt1_gc"
+                                    android:text="@string/_1" />
+
+                                <TextView
+                                    android:id="@+id/tv_Plus"
+                                    style="@style/txtvew_w30dp_h30dp_ts18_wgt1"
+                                    android:text="@string/plus"
+                                    />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:layout_width="@dimen/dp0"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".15"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:gravity="center"
+                                android:visibility="gone"
+                                android:inputType="number"
+                                android:maxLength="2"
+                                android:text="1" />
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:elevation="@dimen/dp5"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/dp5"
+                        app:cardElevation="@dimen/dp5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/dp5"
+                            android:paddingRight="@dimen/dp5"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp40"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".75"
+                                    android:gravity="center|left"
+                                    android:hint="Enter Location Manually"
+                                    android:paddingLeft="10dp"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/sp15" />
+
+                                <Switch
+                                    android:id="@+id/sw_locationManually"
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".17"
+                                    android:layout_margin="@dimen/dp5"
+                                  android:layout_gravity="center"
+                                    android:checked="true" />
+
+                                <ImageView
+                                    android:id="@+id/iv_location"
+                                    android:layout_width="@dimen/dp0"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".08"
+                                    android:layout_gravity="center"
+                                    android:visibility="visible"
+                                    android:layout_margin="@dimen/dp5"
+                                    android:background="@drawable/ic_my_location" />
+
+                            </LinearLayout>
+
+                            <EditText
+                                android:id="@+id/ed_StopName"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_marginTop="@dimen/dp5"
+                                android:layout_marginBottom="@dimen/dp5"
+                                android:background="@drawable/spinnerbackground_two"
+                                android:hint="Enter stop name"
+                                android:focusableInTouchMode="true"
+                                android:inputType="textCapSentences|text"
+                                android:paddingLeft="@dimen/dp10" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp40"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/ed_latValue"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/dp2"
+                                    android:layout_weight=".45"
+                                    android:background="@drawable/spinnerbackground_two"
+                                    android:gravity="center"
+                                    android:hint="Enter latitude point"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:focusableInTouchMode="true"
+                                    android:textSize="@dimen/sp12" />
+
+                                <EditText
+                                    android:id="@+id/ed_longValue"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_weight=".45"
+                                    android:background="@drawable/spinnerbackground_two"
+                                    android:gravity="center"
+                                    android:hint="Enter longitude point"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:focusableInTouchMode="true"
+                                    android:textSize="@dimen/sp12" />
+
+                                      </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/dp40"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/ed_stopDistance"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/dp2"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/spinnerbackground_two"
+                                    android:gravity="center"
+                                    android:hint="Enter stop distance"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:focusableInTouchMode="true"
+                                    android:textSize="@dimen/sp12" />
+
+                                <EditText
+                                    android:id="@+id/ed_stopTime"
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_weight=".5"
+                                    android:background="@drawable/spinnerbackground_two"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:focusableInTouchMode="true"
+                                    android:hint="Enter stop approx time"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="@dimen/dp10"
+                                    android:textSize="@dimen/sp15" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:elevation="@dimen/dp8"
+                                android:layout_marginTop="@dimen/dp10"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".7"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center|left|top"
+                                    android:hint="Attach Vehicle Stop Image"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="@dimen/dp10"
+                                    android:textColor="@color/green"
+                                    android:textSize="@dimen/sp16" />
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_weight=".3"
+                                    android:gravity="center"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <ImageView
+                                        android:id="@+id/iv_stopImage"
+                                        android:layout_width="@dimen/dp90"
+                                        android:layout_height="@dimen/dp90"
+                                        android:layout_gravity="center"
+                                        android:layout_margin="@dimen/dp5"
+                                        android:backgroundTint="@color/orange_colorPrimaryDark"
+                                        android:background="@drawable/image_backgroung_green"/>
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+            <Button
+                android:id="@+id/btn_Submit"
+                android:layout_width="@dimen/dp120"
+                android:layout_height="@dimen/dp40"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp20"
+                android:backgroundTint="@color/orange_colorPrimaryDark"
+                android:background="@drawable/image_backgroung_green"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp15" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

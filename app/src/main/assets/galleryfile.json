@@ -1,0 +1,31 @@
+{
+   "status_code": 200,
+   "data": {
+      "1": {
+         "type_of_body": "First Hand",
+         "GPS_Details": "g",
+         "added_datetime": "2020-01-06T07:20:35.827Z",
+         "school_id": "55e9cd8c-052a-46b1-b81c-14f85e11a8fe",
+         "added_by": "David",
+         "seating_capacity": 23,
+         "registration_no": "13",
+         "class_of_vehicle": "Truck",
+         "vehicle_uuid": "348f35b7-3d25-40f3-8b33-5f8603e9dd89",
+         "vehicle_id": "BHREADqA"
+      },
+      "2": {
+         "type_of_body": "First Hand",
+         "GPS_Details": "g",
+         "added_datetime": "2020-01-06T07:17:27.803Z",
+         "school_id": "55e9cd8c-052a-46b1-b81c-14f85e11a8fe",
+         "added_by": "David",
+         "seating_capacity": 23,
+         "registration_no": "1",
+         "class_of_vehicle": "Truck",
+         "vehicle_uuid": "a8256eec-8127-4002-bd7c-f32cc86b0196",
+         "vehicle_id": "BHREADq"
+      }
+   },
+   "status": "Success",
+   "message": "School bus details"
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/dp120"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/birthday_card"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <in.varadhismartek.patashalaerp.GeneralClass.CircleImageView
+        android:layout_width="@dimen/dp60"
+        android:layout_height="@dimen/dp60"
+        android:background="@drawable/circle_bg"
+        android:id="@+id/cvStaffImage"/>
+
+
+    <TextView
+        android:id="@+id/tvStaffName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABHISHEK GUPTA"
+        android:textStyle="bold"
+        android:fontFamily="@font/baumans"/>
+
+    <TextView
+        android:id="@+id/tvStaffID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="VS017BHL00001"
+        android:textSize="@dimen/sp12" />
+
+
+</LinearLayout>

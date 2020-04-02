@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp35">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Homework"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_popup_green"
+        android:padding="@dimen/dp10"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:padding="@dimen/dp10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/division"/>
+
+            <TextView
+                android:id="@+id/tv_division_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginRight="@dimen/dp5"
+                android:text="High School"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dp20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_of_homeworks"/>
+
+            <LinearLayout
+                android:id="@+id/ll_incrementing_child_perTeaching1"
+                style="@style/linearLayout_WH_wrap"
+                android:layout_marginEnd="3dp"
+                android:layout_marginRight="3dp">
+
+                <TextView
+                    android:id="@+id/tv_minus"
+                    style="@style/textView_WH30"
+                    android:text="@string/dash"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    style="@style/textView_W15H28"
+                    android:hint="@string/_1"
+                    android:textColor="@color/drak_grey"
+                    tools:ignore="HardcodedText,TextFields"
+                    android:importantForAutofill="no" />
+
+                <TextView
+                    android:id="@+id/tv_Plus"
+                    style="@style/textView_WH30"
+                    android:text="@string/plus"
+                    android:textSize="@dimen/sp20"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="@dimen/dp30"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@color/red"/>
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30"
+            android:layout_weight="1"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:background="@color/barrier_green_colorPrimaryDark"/>
+
+    </LinearLayout>
+
+</LinearLayout>

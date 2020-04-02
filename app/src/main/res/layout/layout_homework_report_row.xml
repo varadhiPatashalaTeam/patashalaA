@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp1"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp1"
+        android:layout_marginBottom="@dimen/dp5"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/slno"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight=".2"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/rep_stu_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:paddingLeft="@dimen/dp25"
+            android:layout_weight=".5"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/rep_task_complete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:layout_weight=".2"
+            android:textColor="@color/black"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_report_view"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight=".1">
+            <ImageView
+                android:layout_width="@dimen/dp25"
+                android:layout_height="@dimen/dp25"
+                android:background="@drawable/ic_view"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/dp2"
+        android:background="@color/light_grey"
+        android:layout_marginLeft="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp5"/>
+
+
+
+<!--
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/dp5"
+        app:cardElevation="@dimen/dp5"
+        android:layout_margin="@dimen/dp0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/dp5"
+            android:layout_marginLeft="@dimen/dp5"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1f3f4"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:layout_weight="1"
+                    android:text="@string/Class"/>
+
+                <TextView
+                    android:id="@+id/tv_subject"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:layout_weight="1"
+                    android:text="@string/Class"/>
+
+                <TextView
+                    android:id="@+id/tv_section"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp14"
+                    android:text="Section:"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_work_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:textStyle="italic"
+                android:text="Homework Title:"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp14"
+                android:textStyle="italic"
+                android:text="@string/description"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/border_red">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Assign Date"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp2"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_red"/>
+
+                    <TextView
+                        android:id="@+id/tv_assign_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp12"
+                        android:gravity="center"
+                        android:text="Submit Date" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/dp5"
+                    android:background="@drawable/border_blue">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit Date"
+                        android:gravity="center"
+                        android:padding="@dimen/dp2"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/white"
+                        android:background="@drawable/btn_blue"/>
+
+                    <TextView
+                        android:id="@+id/tv_submit_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/sp12"
+                        android:layout_weight="1"
+                        android:text="Submit Date" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>-->
+</LinearLayout>

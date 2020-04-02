@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        style="@style/Fl_normal"
+        android:layout_margin="@dimen/dp5"
+        android:background="@drawable/shape4"
+        tools:ignore="UselessParent">
+
+
+        <ImageView
+           android:layout_height="@dimen/dp50"
+            android:layout_width="@dimen/dp50"
+            android:scaleType="fitXY"
+            android:id="@+id/iv_attachment"
+            android:contentDescription="@string/image" />
+
+        <ImageView
+            android:id="@+id/btn_delete"
+            android:visibility="gone"
+            android:layout_gravity="end"
+            android:padding="@dimen/dp10"
+            android:layout_margin="@dimen/dp3"
+            android:background="@drawable/ic_cancel_red"
+            android:contentDescription="cancel_icon"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20" />
+
+
+    </FrameLayout>
+
+</LinearLayout>

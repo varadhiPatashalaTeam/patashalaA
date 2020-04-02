@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/dp20">
+
+    <TextView
+        android:id="@+id/tv_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp10"
+        android:text="Delete Notice"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp16"
+        android:background="@drawable/ic_popup_staff"/>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp14"
+            android:layout_margin="@dimen/dp20"
+            android:text="Are you sure, You want to delete this Notice?"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_no"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:background="@drawable/btn_round_shape_red"
+                android:text="No"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp10"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/bt_yes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp35"
+                android:background="@drawable/btn_round_shape_green"
+                android:text="Yes"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/dp10"
+                android:textAllCaps="false"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_update"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+
+        <LinearLayout
+            style="@style/Ll_normal_vtl"
+            android:background="@color/backgroundColor"
+            android:padding="@dimen/dp5">
+
+            <TextView
+                style="@style/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:text="Title"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_title"
+                style="@style/edittext_normal"
+                android:layout_height="@dimen/dp75"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp3"
+                android:background="@drawable/shape4"
+                android:padding="@dimen/dp5"
+                android:gravity="start"
+                android:textSize="@dimen/sp14"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <TextView
+                style="@style/tv_normal"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/dp5"
+                android:text="Message"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_message"
+                style="@style/edittext_normal"
+                android:layout_height="@dimen/dp185"
+                android:layout_gravity="start"
+                android:layout_margin="@dimen/dp3"
+                android:background="@drawable/shape4"
+                android:gravity="start"
+                android:padding="@dimen/dp5"
+                android:scrollHorizontally="false"
+                android:singleLine="false"
+                android:textSize="@dimen/sp14"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/bt_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:background="@drawable/btn_round_shape_red"
+                    android:text="Cancel"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp10"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"/>
+
+                <Button
+                    android:id="@+id/bt_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp35"
+                    android:background="@drawable/btn_round_shape_green"
+                    android:text="Update"
+                    android:layout_weight="1"
+                    android:layout_margin="@dimen/dp10"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

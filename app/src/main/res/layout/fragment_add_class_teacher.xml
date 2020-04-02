@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/orange_colorPrimaryDark"
+    tools:context=".AddClassTeacher.AddClassTeacherFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange_colorPrimaryDark">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_backBtn"
+                android:layout_margin="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white_24dp"
+                android:contentDescription="@string/image"/>
+
+            <TextView
+                android:id="@+id/text_view_assign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:text="Class Teacher List"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/card_design">
+
+
+        <LinearLayout
+            android:id="@+id/ll_viewList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:orientation="horizontal"
+                android:background="@color/colorLight">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp12"
+                    android:gravity="center"
+                    android:text="Class &amp; Section"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:text="Teacher Name"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:text="Id"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:text="Action"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_add"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            android:layout_margin="@dimen/sp24"
+            app:pressedTranslationZ="12dp" />
+
+       <!-- <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp5"
+            app:cardElevation="@dimen/dp2"
+            android:layout_margin="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Allow Attendance Mark"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/tv_all"
+                        android:layout_width="@dimen/dp60"
+                        android:layout_height="@dimen/dp30"
+                        android:padding="@dimen/dp5"
+                        android:text="All"
+                        android:textSize="@dimen/sp12"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/btn_round_shape_green"/>
+
+                    <TextView
+                        android:id="@+id/tv_teacher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp30"
+                        android:padding="@dimen/dp5"
+                        android:text="Class Teacher"
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:textSize="@dimen/sp12"
+                        android:background="@drawable/marks_bg"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/tv_save_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:padding="@dimen/dp5"
+                    android:layout_gravity="end"
+                    android:text="Save"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/image_backgroung"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/dp5"
+            app:cardElevation="@dimen/dp2"
+            android:layout_margin="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp5"
+                    android:text="Add Class Teacher"
+                    android:textSize="@dimen/sp16"
+                    android:layout_gravity="center"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp1"
+                    android:background="@color/colorLight"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Spinner
+                            android:id="@+id/spn_class"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_weight="1"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/spinnerbackground"/>
+
+                        <Spinner
+                            android:id="@+id/spn_section"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_weight="1"
+                            android:layout_margin="@dimen/dp10"
+                            android:background="@drawable/spinnerbackground"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_margin="@dimen/dp10"
+                        android:orientation="horizontal"
+                        android:background="@drawable/border_rect_light">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp40"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_search_black_24dp"
+                            android:padding="@dimen/dp5"
+                            android:background="@drawable/rect_boarder"/>
+
+                        <TextView
+                            android:id="@+id/tv_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:text="Search Teacher..."
+                            android:textColor="@color/hintColor"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/dp5"
+                            android:textSize="@dimen/sp14"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/tv_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:padding="@dimen/dp5"
+                        android:layout_gravity="end"
+                        android:text="Save"
+                        android:layout_margin="@dimen/dp10"
+                        android:background="@drawable/image_backgroung"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/ll_viewList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Class Teacher List"
+                android:textSize="@dimen/sp16"
+                android:padding="@dimen/dp5"
+                android:gravity="center_horizontal"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/account_background_shape"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp30"
+                android:orientation="horizontal"
+                android:background="@color/colorLight">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/sp12"
+                    android:gravity="center"
+                    android:text="Class &amp; Section"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:text="Teacher Name"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:text="Id"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="@dimen/sp12"
+                    android:text="Action"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

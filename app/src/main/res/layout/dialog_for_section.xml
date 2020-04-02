@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dp0"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ic_popup"
+        android:padding="@dimen/dp10"
+        android:text="select Section"
+        android:textColor="@color/white" />
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp10"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_below="@id/toolbar"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="10dp"
+            android:inputType="text"
+            android:layout_margin="@dimen/dp5"
+            android:background="@drawable/spinnerbackground_two"
+            android:hint="Search By student name" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ed_search"
+            android:layout_marginBottom="@dimen/dp30"
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_add_dialog"
+        android:layout_width="@dimen/dp120"
+        android:layout_height="@dimen/dp30"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/btn_round_shape_green"
+        android:text="@string/add"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

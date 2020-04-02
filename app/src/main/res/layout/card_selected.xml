@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Ll_normal_htl"
+    android:layout_margin="@dimen/dp2"
+    android:background="@drawable/border_rect">
+
+    <TextView
+        android:id="@+id/module"
+        android:text="@string/module"
+        tools:ignore="SpUsage"
+        android:layout_weight="0.6"
+        style="@style/tv_normal_weight" />
+
+    <TextView
+        android:id="@+id/checker"
+        style="@style/tv_normal_weight"
+        android:gravity="start"
+        android:text="@string/checker"
+        tools:ignore="SpUsage" />
+
+    <TextView
+        android:id="@+id/maker"
+        style="@style/tv_normal_weight"
+        android:layout_gravity="center"
+        android:text="@string/maker"
+        tools:ignore="SpUsage" />
+
+</LinearLayout>
